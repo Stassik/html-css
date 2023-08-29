@@ -65,7 +65,7 @@ vsc, для этого вводим lorem и нажимаем клавишу tab
 1. Открыть работу из предыдущего семинара
 2. Создать файл стилей style.css
 3. Подключить ко всем страницам
-4. Задать стиль
+4. Задать стиль  
 a {
 text-decoration: none;
 }
@@ -75,52 +75,52 @@ text-decoration: none;
 1. Разделить экран на 2 части, сделать так чтобы файл стилей располагался
 справа, а все html файлы были слева
 2. Для всех ссылок меню задать класс (придумать логичное название класса)
-3. Для класса меню задать стили
-    a. color: cornflowerblue;
-    b. font-size: 16px;
-    c. line-height: 20px;
+3. Для класса меню задать стили  
+    a. color: cornflowerblue;  
+    b. font-size: 16px;  
+    c. line-height: 20px;  
 4. Проверить отображения стилей на всех страницах проекта
-5. Для всех заголовков h1 на сайте задать класс и к нему стиль
-    a. color: #222222;
-    b. font-size: 28px;
-    c. line-height: 36px;
+5. Для всех заголовков h1 на сайте задать класс и к нему стиль  
+    a. color: #222222;  
+    b. font-size: 28px;  
+    c. line-height: 36px;  
     d. font-weight: bold;
 
 ### Задание 3
 1. Для всех параграфов в проекте задать класс
-2. К данному классу задать стили
-    a. font-style: normal;
-    b. font-weight: 300;
-    c. font-size: 18px;
-    d. line-height: 30px;
+2. К данному классу задать стили  
+    a. font-style: normal;  
+    b. font-weight: 300;  
+    c. font-size: 18px;  
+    d. line-height: 30px;  
     e. color: #7D7987;
 3. На главной странице заголовку h2 задать класс
-4. К данному классу указать стиль
-    a. color: coral;
-    b. font-style: normal;
-    c. font-weight: 700;
-    d. font-size: 36px;
-    e. line-height: 80px;
+4. К данному классу указать стиль  
+    a. color: coral;  
+    b. font-style: normal;  
+    c. font-weight: 700;  
+    d. font-size: 36px;  
+    e. line-height: 80px;  
 5. На странице обо мне создать класс для изображения
-6. Указать стиль для изображения
-    a. border-radius: 10px;
+6. Указать стиль для изображения  
+    a. border-radius: 10px;  
     b. Атрибутом задать значение ширины для картинки
 ### Задание 4
 1. На странице «Оставить заявку» всем полям ввода задать класс
-2. Для полей ввода задать стиль
-    a. width: 200px;
-    b. height: 30px;
-    c. outline: none;
-    d. border: 1px solid #ccc;
-    e. border-radius: 15px;
-    f. font-size: 14px;
+2. Для полей ввода задать стиль  
+    a. width: 200px;  
+    b. height: 30px;  
+    c. outline: none;  
+    d. border: 1px solid #ccc;  
+    e. border-radius: 15px;  
+    f. font-size: 14px;  
     g. line-height: 30px;
 3. Всем кнопкам задать класс
-4. Всем кнопкам указать стиль
-    a. width: 100px;
-    b. height: 30px;
-    c. font-size: 14px;
-    d. border: 1px solid #ccc;
+4. Всем кнопкам указать стиль  
+    a. width: 100px;  
+    b. height: 30px;  
+    c. font-size: 14px;  
+    d. border: 1px solid #ccc;  
     e. border-radius: 10px;
-5. Для всех страниц указать стиль для тега body
+5. Для всех страниц указать стиль для тега body  
     a. font-family: sans-serif;
