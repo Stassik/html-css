@@ -36,6 +36,7 @@ a {
 
 .header__link:hover {
     color: #F25822;
+    cursor: pointer;
 }
 
 .top__content {
@@ -74,6 +75,7 @@ a {
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
     color: #fff;
+    cursor: pointer;
 }
 
 .top__logos {
