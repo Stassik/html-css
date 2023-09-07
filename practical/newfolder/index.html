@@ -5,41 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>New site</title>
+    <script src="https://kit.fontawesome.com/c71a3f0222.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="header">
-            <a href="#" class="header__link">Home</a>
-            <a href="#" class="header__link">About</a>
-            <a href="#" class="header__link">Services</a>
-            <a href="#" class="header__link">Blog</a>
-            <a href="#" class="header__link">Contact</a>
+    <header class="header">
+        <div class="container">
+            <nav class="header__nav">
+                <a href="#main" class="header__link">Home</a>
+                <a href="#about" class="header__link">About</a>
+                <a href="#services" class="header__link">Services</a>
+                <a href="#blog" class="header__link">Blog</a>
+                <a href="#contacts" class="header__link">Contact</a>
+            </nav>
         </div>
+    </header>
+    <main id="main" class="main">
         <div class="main__content">
-            <div class="main__info">
-                <span>Next genaretion platform</span>
-                <h1 class="title">Artificial intelligence & Syber security</h1>
-                <p class="main__text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                    publishing industries for previewing layouts and visual mockups.</p>
-                <div class="main__buttons">
-                    <button class="main__btn">Get Started</button>
-                    <button class="main__btn">
-                        <img src="img/triangle.svg" alt="triangle" class="btn_img">Watch Video
-                    </button>
+            <div class="container flex">
+                <div class="main__info">
+                    <h3 class="main__subtitle">Next genaretion platform</h3>
+                    <h1 class="title">Artificial intelligence & Syber security</h1>
+                    <p class="main__text text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                        publishing industries for previewing layouts and visual mockups.</p>
+                    <div class="main__buttons">
+                        <button class="main__btn btn">Get Started</button>
+                        <button class="main__btn btn"><i class="btn__img fa-solid fa-play"></i>Watch Video</button>
+                    </div>
                 </div>
+                <img src="img/main_img.png" alt="main photo" class="main__img">
             </div>
-            <img src="img/main_img.png" alt="main photo" class="main__img">
         </div>
         <div class="main__logos">
-            <a href="#" class="logo__link"><img src="img/logo_1.svg" alt="logo 1" class="logo__img"></a>
-            <a href="#" class="logo__link"><img src="img/logo_2.svg" alt="logo 2" class="logo__img"></a>
-            <a href="#" class="logo__link"><img src="img/logo_3.svg" alt="logo 3" class="logo__img"></a>
-            <a href="#" class="logo__link"><img src="img/logo_4.svg" alt="logo 4" class="logo__img"></a>
+            <div class="container flex">
+                <a href="#" class="logo__link"><img src="img/logo_1.svg" alt="logo 1" class="logo__img"></a>
+                <a href="#" class="logo__link"><img src="img/logo_2.svg" alt="logo 2" class="logo__img"></a>
+                <a href="#" class="logo__link"><img src="img/logo_3.svg" alt="logo 3" class="logo__img"></a>
+                <a href="#" class="logo__link"><img src="img/logo_4.svg" alt="logo 4" class="logo__img"></a>
+            </div>
         </div>
-    </div>
+    </main>
+    <section id="about" class="about">
+        <div class="container flex">
+            <img src="img/about.png" alt="about photo" class="about__img">
+            <div class="about__info">
+                <h2 class="about__title">Apply AI, Deep Learning and Data Sciece to solve</h2>
+                <p class="about__text text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                    publishing industries for previewing layouts and visual mockups.</p>
+                <button class="about__btn btn">Learn More</button>
+            </div>
+        </div>
+    </section>
+    <section id="services" class="services">
+        <div class="container flex wrap">
+            <div class="services__item">
+                <img src="img/service1.png" alt="service image" class="services__img">
+                <h3 class="services__title">Expert Prespective Agency Awards</h3>
+                <p class="services__text text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
+            </div>
+            <div class="services__item">
+                <img src="img/service2.png" alt="service image" class="services__img">
+                <h3 class="services__title">Business Prespective Global Agency Awards</h3>
+                <p class="services__text text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
+            </div>
+            <div class="services__item">
+                <img src="img/service3.png" alt="service image" class="services__img">
+                <h3 class="services__title">Value for Results in Global Agency Awards</h3>
+                <p class="services__text text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups.</p>
+            </div>
 
+            <div class="services__item item">
+                <img src="img/service1.png" alt="service image" class="services__img">
+                <h3 class="services__title">In print, and publishing industries for previewing layouts and visual
+                    mockups.</h3>
+                <p class="services__text text">Lorem ipsum is placeholder text commonly used in print, and publishing
+                    industries for previewing layouts and visual mockups. Lorem ipsum is placeholder text commonly used
+                    in print, and publishing industries for previewing layouts and visual mockups. Lorem ipsum is
+                    placeholder text commonly used in print, and publishing industries for previewing layouts and visual
+                    mockups.</p>
+            </div>
+            <div class="grid1">
+                <div class="services__item item1">
+                    <img src="img/service2.png" alt="service image" class="services__img">
+                    <h3 class="services__title">Value for Results in Global Agency Awards</h3>
+                    <p class="services__text text">Lorem ipsum is placeholder text commonly used in print, and
+                        publishing
+                        industries for previewing layouts and visual mockups.</p>
+                </div>
+                <div class="services__item item1">
+                    <img src="img/service3.png" alt="service image" class="services__img">
+                    <h3 class="services__title">Value for Results in Global Agency Awards</h3>
+                    <p class="services__text text">Lorem ipsum is placeholder text commonly used in print, and
+                        publishing
+                        industries for previewing layouts and visual mockups.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog" class="blog">
+        <div class="container flex">
+            <div class="blog__info">
+                <h2 class="blog__title">What our clients say about our awesome solutions</h2>
+                <p class="blog__text text">To take a trivial example, which of us ever undertakes laborious physical
+                    exercise, except to obtain some advantage from it who do not know.</p>
+                <p class="blog__text text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                    publishing .</p>
+                <p class="blog__text text">Lorem ipsum is placeholder previewing layouts and visual mockups..</p>
+                <p class="blog__text text">Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                    publishing industries for previewing layouts and visual mockups..</p>
+            </div>
+            <img src="img/blog.png" alt="blog photo" class="blog__img">
+        </div>
+    </section>
+    <footer id="contacts" class="footer">
+        <div class="container flex">
+            <section class="footer__contacts">
+                <h3 class="footer__title">INFORMATION</h3>
+                <div class="contacts">
+                    <ul class="contacts__list">
+                        <li class="contact__item"><i class="fa-regular fa-envelope"></i>Company@gmail.com.com</li>
+                        <li class="contact__item"><i class="fa-solid fa-phone-volume"></i>Phone: (064) 332-1233</li>
+                        <li class="contact__item"><i class="fa-solid fa-location-dot"></i>450 Wall Street, USA, New York</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="footer__about">
+                <h3 class="footer__title">ABOUT THE STORE</h3>
+                <p class="footer__text">
+                    Lorem ipsum is placeholder text commonly used in the graphic, print, and layouts and visual mockups.
+                </p>
+            </section>
+            <section class="footer__links">
+                <h3 class="footer__title">ABOUT THE STORE</h3>
+                <p class="web">www.company.com</p>
+                <div class="social">
+                    <a href="#" class="social__link"><img src="img/twit.svg" alt="social image" class="social__img"></a>
+                    <a href="#" class="social__link"><img src="img/in.svg" alt="social image" class="social__img"></a>
+                    <a href="#" class="social__link"><img src="img/youtube.svg" alt="social image" class="social__img"></a>
+                </div>
+            </section>
+        </div>
+    </footer>
 </body>
 
 </html>
