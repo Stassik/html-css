@@ -1,21 +1,44 @@
+@import url("fonts/Gilroy-Medium/style.css");
+@import url("fonts/Gilroy-Bold/style.css");
+@import url("fonts/Gilroy-Semibold/style.css");
+
+
+
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 a {
     text-decoration: none;
 }
 
+.top {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 .header {
     padding-top: 40px;
+    margin-bottom: 84px;
 }
 
 .header__logo {
+    display: inline-flex;
+    align-items: center;
+    font-family: Gilroy, sans-serif;
     font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 700;
+}
+
+.logo__image {
+    margin-right: 14px;
 }
 
 .logo__color {
@@ -24,59 +47,91 @@ a {
 
 .header__nav {
     padding: 12px 0;
+
 }
 
 .header__link {
+    margin-left: 25px;
     color: #000;
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
     font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
 }
 
 .header__link:hover {
     color: #F25822;
-    cursor: pointer;
+}
+
+.header__link i {
+    margin-left: 4px;
+    font-size: 10px;
 }
 
 .top__content {
     margin: 84px 0 162px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.top__info {
+    width: 47%;
+    margin-right: 40px;
 }
 
 .title {
     margin-bottom: 17px;
+    font-family: Gilroy, sans-serif;
     font-size: 60px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 700;
 }
 
 .top__text {
+    width: 85%;
+    font-family: Gilroy, sans-serif;
     color: #888;
     font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
+    font-weight: 500;
 }
 
-.top__buttons {
+.top__nav {
     margin-top: 37px;
+    
 }
 
 .top__btn {
     padding: 16px 36px;
+    margin-right: 72px;
     border: none;
-    background: none;
-    color: #aaa;
-}
-
-.top__btn:hover {
     border-radius: 50px;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    font-family: Gilroy, sans-serif;
+    font-size: 15px; 
+    font-weight: 600;
     color: #fff;
     cursor: pointer;
 }
+
+.top__btn:hover {
+    outline: 1px solid #F25822;
+    background: #fff;
+    color: #F25822;
+}
+
+.top__link {
+    border: none;
+    background: none;
+    color: #aaa;
+    font-family: Gilroy, sans-serif;
+    font-size: 15px; 
+    font-weight: 600;
+}
+
+.top__link:hover {
+    color: #F25822;
+}
+
+
 
 .top__logos {
     padding: 97px 0;
