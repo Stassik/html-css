@@ -1,6 +1,7 @@
 @import url("fonts/Gilroy-Medium/style.css");
 @import url("fonts/Gilroy-Bold/style.css");
 @import url("fonts/Gilroy-Semibold/style.css");
+@import url("fonts/Gilroy-Regular/style.css");
 
 
 
@@ -10,11 +11,19 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: Gilroy, sans-serif;
+}
+
 a {
     text-decoration: none;
 }
 
-.top {
+a:hover {
+    color: #F25822;
+}
+
+.container {
     width: 1170px;
     margin: 0 auto;
 }
@@ -32,7 +41,6 @@ a {
 .header__logo {
     display: inline-flex;
     align-items: center;
-    font-family: Gilroy, sans-serif;
     font-size: 24px;
     font-weight: 700;
 }
@@ -53,14 +61,11 @@ a {
 .header__link {
     margin-left: 25px;
     color: #000;
-    font-family: Gilroy, sans-serif;
     font-weight: 700;
     font-size: 14px;
 }
 
-.header__link:hover {
-    color: #F25822;
-}
+
 
 .header__link i {
     margin-left: 4px;
@@ -80,14 +85,12 @@ a {
 
 .title {
     margin-bottom: 17px;
-    font-family: Gilroy, sans-serif;
     font-size: 60px;
     font-weight: 700;
 }
 
 .top__text {
     width: 85%;
-    font-family: Gilroy, sans-serif;
     color: #888;
     font-size: 20px;
     font-weight: 500;
@@ -95,35 +98,40 @@ a {
 
 .top__nav {
     margin-top: 37px;
-    
+
 }
 
-.top__btn {
+.btn {
     padding: 16px 36px;
-    margin-right: 72px;
     border: none;
     border-radius: 50px;
     background: #F25822;
     box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
     font-family: Gilroy, sans-serif;
-    font-size: 15px; 
-    font-weight: 600;
+    font-weight: 700;
     color: #fff;
     cursor: pointer;
 }
 
-.top__btn:hover {
+
+.btn:hover {
     outline: 1px solid #F25822;
     background: #fff;
     color: #F25822;
 }
 
+.top__btn {
+    margin-right: 72px;
+    font-size: 15px;
+}
+
+
+
 .top__link {
     border: none;
     background: none;
     color: #aaa;
-    font-family: Gilroy, sans-serif;
-    font-size: 15px; 
+    font-size: 15px;
     font-weight: 600;
 }
 
@@ -135,4 +143,118 @@ a {
 
 .top__logos {
     padding: 97px 0;
+}
+
+.features {
+    padding: 100px 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 30px;
+}
+
+.features__item {
+    padding: 40px 30px 25px;
+
+}
+
+.features__item:hover {
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+
+.feature__img {
+    margin-bottom: 25px;
+}
+
+.feature__title {
+    margin-bottom: 17px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.feature__text {
+    margin-bottom: 25px;
+    color: #666;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 400;
+}
+
+.feature__link {
+    color: #000;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 150%
+}
+
+.dir-colum {
+    flex-direction: column;
+    align-items: center;
+}
+
+.services {
+    padding: 92px 0 100px;
+    background-color: #FAFAFA;
+}
+
+.services__title {
+    margin-bottom: 19px;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.services__text {
+    margin-bottom: 54px;
+    width: 60%;
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+
+.services__item {
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    text-align: center;
+}
+
+.services__item:hover {
+    box-shadow: 15px 25px 60px -5px rgba(0, 0, 0, 0.10);
+}
+
+.pos_img {
+    margin-top: 15px;
+}
+
+.services__subtitle {
+    margin: 26px 0 22px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.text {
+    margin: 0 30px 39px;
+    color: #AAA;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.services__btn {
+    font-size: 13px;
+}
+
+.services__btn i {
+    margin-left: 6px;
 }
