@@ -48,6 +48,7 @@ a {
 }
 
 .main {
+    margin-bottom: 157px;
     padding: 260px 0 99px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) -41.9%, rgba(255, 255, 255, 0.02) 260.24%);
     backdrop-filter: blur(100px);
@@ -128,8 +129,8 @@ a {
 }
 
 .about {
-    padding-top: 157px;
-    margin-bottom: 107px;
+    padding-top: 257px;
+    margin: -257px 0 264px;
 }
 
 .about__info {
@@ -154,7 +155,7 @@ a {
 
 .services {
     padding-top: 157px;
-    margin-bottom: 56px;
+    margin: -157px 0 213px;
 }
 
 .grid {
@@ -224,8 +225,8 @@ a {
 }
 
 .blog {
-    padding-top: 157px;
-    margin-bottom: 221px;
+    padding-top: 243px;
+    margin: -243px 0 221px;
 }
 
 .blog__info {
@@ -292,7 +293,14 @@ a {
 }
 
 .web {
+    display: inline-block;
     margin-bottom: 24px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 500;
+}
+.web:hover {
+    color: #3A68B8;
 }
 
 .social__link {
