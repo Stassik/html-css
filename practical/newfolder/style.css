@@ -16,6 +16,16 @@ a {
     text-decoration: none;
 }
 
+.center {
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .header {
     position: fixed;
@@ -23,11 +33,6 @@ a {
     z-index: 100;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) -41.9%, rgba(255, 255, 255, 0.02) 260.24%);
     backdrop-filter: blur(100px);
-}
-
-.container {
-    width: 1146px;
-    margin: 0 auto;
 }
 
 .header__nav {
@@ -49,18 +54,17 @@ a {
 
 .main {
     margin-bottom: 157px;
-    padding: 260px 0 99px;
+    padding-top: 260px;
+    padding-bottom: 99px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) -41.9%, rgba(255, 255, 255, 0.02) 260.24%);
     backdrop-filter: blur(100px);
 }
 
 .main__content {
     margin-bottom: 197px;
+    gap: 128px;
 }
 
-.main__info {
-    margin-right: 130px;
-}
 
 .main__subtitle {
     margin-bottom: 10px;
@@ -123,18 +127,13 @@ a {
     font-size: 20px;
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-}
+
 
 .about {
     padding-top: 257px;
     margin: -257px 0 264px;
-}
-
-.about__info {
-    margin-left: 68px;
+    align-items: center;
+    gap: 68px;
 }
 
 .about__title {
@@ -228,12 +227,10 @@ a {
 .blog {
     padding-top: 243px;
     margin: -243px 0 221px;
+    align-items: center;
+    gap: 25px;
 }
 
-.blog__info {
-    width: 47%;
-    align-self: center;
-}
 
 .blog__title {
     margin-bottom: 40px;
@@ -250,7 +247,8 @@ a {
 }
 
 .footer {
-    padding: 48px 0 24px;
+    padding-top: 48px;
+    padding-bottom: 24px;
     color: #FFF;
     font-family: Roboto;
     font-size: 14px;
