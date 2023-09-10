@@ -29,7 +29,7 @@ a {
 
 .header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 100;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.02) -41.9%, rgba(255, 255, 255, 0.02) 260.24%);
     backdrop-filter: blur(100px);
@@ -62,9 +62,11 @@ a {
 
 .main__content {
     margin-bottom: 197px;
-    gap: 128px;
 }
 
+.main__info {
+    margin-right: 130px;
+}
 
 .main__subtitle {
     margin-bottom: 10px;
@@ -133,7 +135,6 @@ a {
     padding-top: 257px;
     margin: -257px 0 264px;
     align-items: center;
-    gap: 68px;
 }
 
 .about__title {
@@ -228,9 +229,12 @@ a {
     padding-top: 243px;
     margin: -243px 0 221px;
     align-items: center;
-    gap: 25px;
 }
 
+
+.blog__info {
+    align-self: center;
+}
 
 .blog__title {
     margin-bottom: 40px;
