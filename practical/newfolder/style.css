@@ -17,8 +17,8 @@ a {
 }
 
 .center {
-    padding-left: calc(50% - 565px);
-    padding-right: calc(50% - 565px);
+    padding-left: calc(50% - 573px);
+    padding-right: calc(50% - 573px);
 }
 
 .flex {
@@ -315,11 +315,11 @@ a {
 /*Адаптив*/
 
 
-@media (max-width: 1145px) {
+@media (max-width: 1279px) {
     .center {
 
-        padding-left: calc(50% - 294px);
-        padding-right: calc(50% - 294px);
+        padding-left: calc(50% - 302px);
+        padding-right: calc(50% - 302px);
 
     }
 
@@ -331,7 +331,6 @@ a {
 
     .main__subtitle {
         font-size: 16px;
-        ;
     }
 
     .title {
@@ -354,7 +353,7 @@ a {
         gap: 32px;
     }
 
-        
+
 
     .services__item {
         width: 60%;
@@ -368,7 +367,7 @@ a {
         grid-row: 3 / 4;
     }
 
-    .item__big > .services__img {
+    .item__big>.services__img {
         width: auto;
         margin-bottom: 30px;
     }
@@ -405,5 +404,112 @@ a {
     .footer__text {
         width: 80%;
     }
+
+}
+
+@media (max-width: 767px) {
+    .center {
+
+        padding-left: calc(50% - 180px);
+        padding-right: calc(50% - 180px);
+
+    }
+
+
+    .header__link {
+        font-size: 14px;
+
+        padding: 22px 8px;
+    }
+
+    .main {
+        padding-top: 127px;
+        padding-bottom: 108px;
+    }
+
+    .main__content {
+        margin-bottom: 128px;
+    }
+
+    .main__info {
+        text-align: center;
+    }
+
+    .main__subtitle {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .title {
+        margin-bottom: 64px;
+        font-size: 28px;
+    }
+
+    .main__text {
+        margin-bottom: 39px;
+    }
+
+    .main__buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+    }
+
+    .btn {
+        margin-right: 0;
+    }
+
+    .main__img {
+        width: 100%;
+    }
+
+    .about {
+        margin-bottom: 96px;
+    }
+
+    .about__img {
+        width: 100%;
+    }
+
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .about__title {
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+
+    .about__text {
+        margin-bottom: 16px;
+    }
+
+    .services {
+        margin-bottom: 96px;
+    }
+
+    .services__item {
+        width: 100%;
+    }
+
+    .blog__info {
+        text-align: center;
+    }
+
+    .blog__title {
+        margin-bottom: 16px;
+        font-size: 24px;
+    }
+    .blog__text {
+        width: 100%;
+    }
+
+    .blog__img {
+        width: 100%;
+    }
+
 
 }
