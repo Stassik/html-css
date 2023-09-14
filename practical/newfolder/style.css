@@ -277,6 +277,11 @@ a {
     -webkit-backdrop-filter: blur(100px);
 }
 
+.footer__content {
+    
+    align-items: stretch;
+}
+
 .footer__contacts,
 .footer__about,
 .footer__links {
