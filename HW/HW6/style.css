@@ -96,10 +96,10 @@ a {
 
 .main__title::before {
     position: absolute;
-    top: -2.5%;
+    top: -17.5%;
     left: -28px;
     content: "";
-    height: 105%;
+    height: 135%;
     width: 12px;
     background-color: #F16D7F;
 }
@@ -317,6 +317,7 @@ a {
 
     .main__title {
         font-size: 44px;
+        line-height: 30px;
     }
 
     .title__mini {
@@ -385,6 +386,7 @@ a {
 
     .main__title {
         font-size: 38px;
+        line-height: 24px;
     }
 
     .title__mini {
