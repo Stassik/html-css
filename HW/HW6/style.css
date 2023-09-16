@@ -57,14 +57,15 @@ a {
     color: #E8E8E8;
 }
 
-.header__right>i {
+.header__icon {
     margin-left: 30px;
 }
-.cart__icon {
+
+.cart__container {
     position: relative;
 }
 
-.cart__icon::after {
+.cart__container::after {
     content: "5";
     position: absolute;
     top: -9px;
@@ -74,6 +75,7 @@ a {
     justify-content: center;
     width: 19px;
     height: 19px;
+    z-index: 10;
     background-color: #F16D7F;
     color: #FFF;
     font-size: 12px;
@@ -87,7 +89,7 @@ a {
 
 .main__content {
     display: flex;
-    align-items: center;  
+    align-items: center;
 }
 
 .main__img {
@@ -122,7 +124,7 @@ a {
 }
 
 .topical {
-    margin-bottom: 96px;    
+    margin-bottom: 96px;
 }
 
 .topical__content {
@@ -205,19 +207,56 @@ a {
 }
 
 .acquisitions__item {
+    position: relative;
     width: 32%;
     margin-bottom: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: #F3EDED;
     overflow: hidden;
 }
 
-.item__photo {
-   max-height: 100%;
+.img__block {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #F3EDED;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.block__btn {
+    display: none;
+    position: absolute;
+    padding: 11px 13px;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    background: none;
+    border: 1px #FFF solid;
+}
+
+.btn__icon {
+    margin-right: 11px;
+}
+
+.img__block:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+    cursor: pointer;
+}
+
+.img__block:hover .item__photo {
+    z-index: -1;
+}
+
+.img__block:hover .block__btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
 
 .item__info {
     padding: 24px 16px;
@@ -311,6 +350,7 @@ a {
     .big__item {
         max-height: 116px;
     }
+
     .acquisitions__list {
         margin-bottom: 32px;
         grid-template-columns: repeat(2, 1fr);
@@ -328,7 +368,7 @@ a {
         margin-bottom: 74px;
     }
 
-    
+
 
     .acquisitions__btn {
         margin-bottom: 70px;
