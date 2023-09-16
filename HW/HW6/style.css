@@ -17,29 +17,18 @@ a {
 .center {
     max-width: 1140px;
     margin: 0 auto;
-
-    /* padding-left: calc(50% - 562px); */
-    /* padding-right: calc(50% - 562px); */
 }
-
-
-.flex_between {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.flex_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 
 .header {
     padding-bottom: 18px;
     padding-top: 18px;
     background-color: #222;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo__img {
@@ -94,24 +83,25 @@ a {
 
 .main__img {
     margin-left: -230px;
-    margin-right: 63px;
-}
-
-.main__content {
-    display: flex;
-}
-
-.main__line {
-    width: 12px;
-    margin-right: 16px;
-    background-color: #F16D7F;
+    margin-right: 91px;
 }
 
 .main__title {
+    position: relative;
     font-size: 48px;
     font-weight: 900;
     color: #222;
     line-height: 37px;
+}
+
+.main__title::before {
+    position: absolute;
+    top: -2.5%;
+    left: -28px;
+    content: "";
+    height: 105%;
+    width: 12px;
+    background-color: #F16D7F;
 }
 
 .title__mini {
@@ -150,9 +140,9 @@ a {
     background-color: rgba(33, 22, 22, 1);
 }
 
-.big__item {
+.topical__item_big {
     width: 100%;
-    max-height: 180px;
+    height: 180px;
     margin-top: 2%;
 }
 
@@ -197,6 +187,7 @@ a {
     color: #9F9F9F;
     font-size: 14px;
     font-weight: 400;
+    text-align: center;
 }
 
 .acquisitions__list {
@@ -245,7 +236,6 @@ a {
 .img__block:hover {
     background-color: rgba(58, 56, 56, 0.86);
     cursor: pointer;
-    transition: all 1s ease-out;
 }
 
 .img__block:hover .item__photo {
@@ -295,7 +285,6 @@ a {
     color: #F26376;
     font-size: 16px;
     font-weight: 400;
-    transition: all 0.5s ease-out;
 }
 
 .acquisitions__btn:hover {
@@ -306,28 +295,23 @@ a {
 
 @media (max-width: 1160px) {
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 2%;
+        padding-right: 2%;
     }
 }
 
 @media (max-width: 1023px) {
     .center {
         min-width: 768px;
-        margin: 0 auto;
     }
 
-    .header__right>i {
-        margin-left: 20px;
-    }
-
-    .cart__icon {
+    .icon_cart {
         margin-left: 41px;
     }
 
     .main__img {
         margin-left: 0;
-        margin-right: 39px;
+        margin-right: 67px;
         height: 368px;
     }
 
@@ -344,20 +328,19 @@ a {
     }
 
     .topical__item {
-        max-height: 167px;
+        height: 167px;
     }
 
     .topical__img {
         width: 100%;
     }
 
-    .big__item {
-        max-height: 116px;
+    .topical__item_big {
+        height: 116px;
     }
 
     .acquisitions__list {
         margin-bottom: 32px;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .acquisitions__item {
@@ -372,9 +355,79 @@ a {
         margin-bottom: 74px;
     }
 
-
-
     .acquisitions__btn {
         margin-bottom: 70px;
+    }
+}
+
+@media (max-width: 767px) {
+    .center {
+        min-width: 320px;
+    }
+
+    .icon_user,
+    .cart__container {
+        display: none;
+    }
+
+    .main__content {
+        min-height: 363px;
+        justify-content: center;
+    }
+
+    .main__info {
+        margin-left: 28px;
+    }
+
+    .main__img {
+        display: none;
+    }
+
+    .main__title {
+        font-size: 38px;
+    }
+
+    .title__mini {
+        font-size: 20px;
+    }
+
+    .topical {
+        margin-bottom: 32px;
+    }
+
+    .topical__content {
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    .topical__item {
+        margin-bottom: 32px;
+        width: 100%;
+        max-width: 400px;
+        height: 248px;
+    }
+
+    .topical__item_big {
+        margin-top: 0;
+        height: 111px;
+    }
+
+    .acquisitions__text {
+        margin-bottom: 64px;
+    }
+
+    .acquisitions__list {
+        margin-bottom: 41px;
+        justify-content: center;
+    }
+
+    .acquisitions__item {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 4%;
+    }
+
+    .acquisitions__btn {
+        margin-bottom: 85px;
     }
 }
