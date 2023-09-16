@@ -245,6 +245,7 @@ a {
 .img__block:hover {
     background-color: rgba(58, 56, 56, 0.86);
     cursor: pointer;
+    transition: all 1s ease-out;
 }
 
 .img__block:hover .item__photo {
@@ -257,6 +258,9 @@ a {
     cursor: pointer;
 }
 
+.item__photo {
+    width: 100%;
+}
 
 .item__info {
     padding: 24px 16px;
