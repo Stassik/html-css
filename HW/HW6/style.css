@@ -374,6 +374,11 @@ a {
     cursor: pointer;
 }
 
+.acquisitions__btn:active {
+    background-color: #6F6E6E;
+    border-color: #6F6E6E;
+}
+
 .advantages {
     padding: 103px 0;
     background-color: #222224;
