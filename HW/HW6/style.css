@@ -528,7 +528,7 @@ a {
 }
 
 
-@media (max-width: 1607px) {
+@media (max-width: 1600px) {
     .header__nav {
         right: 0;
     }
