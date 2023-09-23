@@ -523,6 +523,8 @@ a {
     list-style-type: none;
 }
 
+
+
 .social__link {
     display: flex;
     align-items: center;
@@ -531,6 +533,19 @@ a {
     height: 32px;
     margin-left: 8px;
     background-color: #fff;
+    transition: background-color 0.3s ease-in;
+}
+
+.social__icon path {
+    transition: fill 0.3s ease-in;
+}
+
+.social__item:hover .social__link {
+    background-color: #F16D7F;
+}
+
+.social__item:hover .social__icon path {
+    fill: #fff;
 }
 
 
