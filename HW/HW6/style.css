@@ -7,7 +7,14 @@
 }
 
 body {
+    min-height: 100vh;
     font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
 }
 
 a {
@@ -215,7 +222,7 @@ a {
 }
 
 .topical__img {
-    height: 100%;
+    width: 100%;
     aspect-ratio: auto;
     z-index: -1;
     transition: all 1s ease-out;
@@ -677,7 +684,16 @@ a {
         width: 100vw;
     }
 
-    .header__burger:hover+.header__nav {
+
+    .header__item:active {
+        cursor: pointer;
+    }
+
+    .header__item:active .header__icon path {
+        fill: #F16D7F;
+    }
+
+    .header__burger:active+.header__nav {
         top: 50px;
     }
 
