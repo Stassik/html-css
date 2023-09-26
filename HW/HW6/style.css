@@ -222,7 +222,7 @@ a {
 }
 
 .topical__img {
-    width: 100%;
+    height: 100%;
     aspect-ratio: auto;
     z-index: -1;
     transition: all 1s ease-out;
