@@ -743,6 +743,10 @@ a {
         align-items: stretch;
     }
 
+    .topical__item:active {
+        background-color: rgba(33, 22, 22, 1);
+    }
+
     .topical__item {
         margin-bottom: 4%;
         width: 100%;
