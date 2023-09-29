@@ -1,0 +1,19 @@
+@mixin flexCenterJustify($justify) {
+    @extend %flexCenter;
+    justify-content: $justify;
+}
+
+
+@mixin fontStyle_400($fontSize) {
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@mixin fontStyle_700($fontSize) {
+    font-size: $fontSize;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

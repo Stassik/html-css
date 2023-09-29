@@ -1,0 +1,258 @@
+.main {
+    margin-bottom: 65px;
+    background-color: #F1E4E6;
+
+    &__content {
+        @extend %flexCenter;
+    }
+
+    &__img {
+        margin-left: -230px;
+        margin-right: 91px;
+    }
+
+    &__title {
+        position: relative;
+        font-size: 48px;
+        font-weight: 900;
+        color: $bgColorDark;
+        line-height: 37px;
+
+        &::before {
+            position: absolute;
+            top: -17.5%;
+            left: -28px;
+            content: "";
+            height: 135%;
+            width: 12px;
+            background-color: $colorContrast;
+        }
+
+        &_mini {
+            @include fontStyle_700(32px);
+        }
+
+        &_pink {
+            color: $colorContrast;
+        }
+    }
+}
+
+.topical {
+    margin-bottom: 96px;
+
+    &__content {
+        @extend %flexCenterBetween;
+        flex-wrap: wrap;
+    }
+
+    &__item {
+        @extend %flexCenterCenter;
+        width: 32%;
+        height: 260px;
+        position: relative;
+        background-color: rgba(33, 22, 22, 0.70);
+        transition: background-color 1s ease-out;
+        overflow: hidden;
+
+        &:hover {
+            background-color: rgba(33, 22, 22, 1);
+        }
+
+        &_big {
+            width: 100%;
+            height: 180px;
+            margin-top: 2%;
+        }
+
+    }
+
+    &__img {
+        height: 100%;
+        aspect-ratio: auto;
+        z-index: -1;
+        transition: all 1s ease-out;
+    }
+
+    &__title {
+        @include fontStyle_700(24px);
+        position: absolute;
+        text-align: center;
+        color: $colorContrast;
+        z-index: 10;
+    }
+
+    &__subtitle {
+        @extend %fontStyle__400_16;
+        color: $colorSuperLight;
+    }
+
+}
+
+
+
+
+
+
+.acquisitions__content {
+    @extend %flexCenter;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.acquisitions__title {
+    @include fontStyle_400(30px);
+    margin-bottom: 6px;
+    color: $bgColorDark;
+}
+
+.acquisitions__text {
+    @extend %fontStyle__400_14;
+    margin-bottom: 48px;
+    color: #9F9F9F;
+    text-align: center;
+}
+
+.acquisitions__list {
+    @extend %flexCenterBetween;
+    flex-wrap: wrap;
+    margin-bottom: 48px;
+}
+
+.acquisitions__item {
+    @extend %flexCenterBetween;
+    flex-direction: column;
+    position: relative;
+    width: 32%;
+    margin-bottom: 2%;
+    overflow: hidden;
+}
+
+.img__block {
+    @extend %flexCenterCenter;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #F3EDED;
+    transition: all .6s;
+}
+
+.block__btn {
+    @extend %fontStyle__400_14;
+    display: none;
+    position: absolute;
+    padding: 11px 13px;
+    color: $colorSuperLight;
+    background: none;
+    border: 1px $colorSuperLight solid;
+    transition: all .6s;
+
+    &:hover {
+        @extend %btn_hover;
+    }
+
+    &:active {
+        @extend %btn_active;
+    }
+}
+
+.btn__icon {
+    margin-right: 11px;
+}
+
+.img__block:hover {
+    background-color: rgba(58, 56, 56, 0.86);
+    cursor: pointer;
+
+    & .item__photo {
+        z-index: -1;
+    }
+
+    & .block__btn {
+        @extend %flexCenter;
+        cursor: pointer;
+    }
+}
+
+
+.item__photo {
+    width: 100%;
+}
+
+.item__info {
+    padding: 24px 16px;
+    background-color: #F8F8F8;
+}
+
+.item__title {
+    @include fontStyle_400(13px);
+    margin-bottom: 16px;
+}
+
+.item__text {
+    margin-bottom: 16px;
+    color: #5D5D5D;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.item__price {
+    @extend %fontStyle__400_16;
+    color: $colorContrast;
+}
+
+.acquisitions__btn {
+    @extend %fontStyle__400_16;
+    display: inline-block;
+    margin-bottom: 60px;
+    padding: 15px 39px;
+    border: 1px solid #FF6A6A;
+    background-color: $colorSuperLight;
+    color: $colorContrast;
+    transition: all .6s;
+
+    &:hover {
+        @extend %btn_hover;
+    }
+
+    &:active {
+        @extend %btn_active;
+    }
+}
+
+
+
+
+
+
+.advantages {
+    padding: 103px 0;
+    background-color: $textColorDark;
+    color: #FBFBFB;
+}
+
+.advantages__content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantages__item {
+    @extend %flexCenterBetween;
+    flex-direction: column;
+    width: 32%;
+    text-align: center;
+}
+
+.advantages__icon {
+    margin-bottom: 28px;
+}
+
+.advantages__title {
+    @include fontStyle_400(20px);
+    margin-bottom: 16px;
+}
+
+.advantages__text {
+    font-size: 14px;
+    font-weight: 300;
+}

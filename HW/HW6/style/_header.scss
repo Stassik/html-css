@@ -1,0 +1,119 @@
+.header {
+    padding-bottom: 18px;
+    padding-top: 18px;
+    background-color: $bgColorDark;
+
+
+    &__content {
+        @extend %flexCenterBetween;
+    }
+
+    &__left {
+        @extend %flexCenter;
+
+        .header__logo {
+            margin-right: 11px;
+        }
+    }
+
+
+
+    &__right {
+        @extend %flexCenter;
+        position: relative;
+        font-size: 26px;
+        color: $colorLight;
+    }
+
+    &__icon {
+        @extend %flexCenter;
+        margin-left: 30px;
+    }
+
+    &__burger:hover+&__nav {
+        top: 53px;
+    }
+
+
+    &__cart {
+        position: relative;
+
+        &::after {
+            @extend %flexCenterCenter;
+            content: "5";
+            position: absolute;
+            top: -9px;
+            right: -9px;
+            width: 19px;
+            height: 19px;
+            z-index: 10;
+            background-color: $colorContrast;
+            color: $colorSuperLight;
+            font-size: 12px;
+            border-radius: 15px;
+        }
+
+    }
+
+    &__nav {
+        position: absolute;
+        top: -650px;
+        right: -232px;
+        padding: 32px;
+        min-width: 232px;
+        background-color: $colorSuperLight;
+        transition: top 1s;
+        z-index: 100;
+    }
+
+
+    &__item:hover {
+        cursor: pointer;
+
+        & .header__icon path {
+            fill: $colorContrast;
+        }
+
+    }
+
+
+    .nav__title {
+        @include fontStyle_700(14px);
+        margin-bottom: 24px;
+        color: #000;
+    }
+    
+    
+    .item__link {
+        display: inline-block;
+        margin-bottom: 12px;
+        color: $colorContrast;
+    }
+    
+    .sublist__item {
+        margin-left: 20px;
+        margin-bottom: 11px;
+
+        &:last-child {
+            margin-bottom: 20px;
+        }
+    }
+    
+    
+    
+    .nav__item:last-child .sublist__item:last-child {
+        margin-bottom: 0;
+    }
+    
+    .sublist__link {
+        color: $colorNeutral;
+    }
+    
+    .list {
+        @extend %fontStyle__400_14;
+        list-style-type: none;
+        
+    }
+
+}
+

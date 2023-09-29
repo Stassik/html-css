@@ -1,0 +1,59 @@
+%flexCenterCenter {
+    @include flexCenterJustify(center);
+}
+
+%flexCenterBetween {
+    @include flexCenterJustify(space-between);
+}
+
+%flexCenter {
+    display: flex;
+    align-items: center;
+}
+
+%fontStyle__400_14 {
+    @include fontStyle_400(14px);
+}
+
+%fontStyle__400_16 {
+    @include fontStyle_400(16px);
+}
+
+%btn_hover {
+    background-color: #FF6A6A;
+    color: $colorSuperLight;
+    cursor: pointer;
+}
+
+%btn_active {
+    background-color: $colorNeutral;
+    border-color: $colorNeutral;
+}
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: Lato, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+a {
+    text-decoration: none;
+}
+
+.center {
+    max-width: $centerDesctopWidth;
+    margin: 0 auto;
+}
