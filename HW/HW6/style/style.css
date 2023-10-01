@@ -95,7 +95,10 @@ a {
 .header__icon {
   margin-left: 30px;
 }
-.header__burger:hover + .header__nav {
+.header__burger-input {
+  display: none;
+}
+#headerBurger:checked ~ .header__nav {
   top: 53px;
 }
 .header__cart {
@@ -122,7 +125,7 @@ a {
   min-width: 232px;
   background-color: #fff;
   transition: top 1s;
-  z-index: 100;
+  z-index: 10;
 }
 .header__item:hover {
   cursor: pointer;

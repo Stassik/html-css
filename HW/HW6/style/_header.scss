@@ -30,7 +30,11 @@
         margin-left: 30px;
     }
 
-    &__burger:hover+&__nav {
+    &__burger-input {
+        display: none;
+    }
+
+    #headerBurger:checked~&__nav {
         top: 53px;
     }
 
@@ -63,7 +67,7 @@
         min-width: 232px;
         background-color: $colorSuperLight;
         transition: top 1s;
-        z-index: 100;
+        z-index: 10;
     }
 
 
@@ -82,14 +86,14 @@
         margin-bottom: 24px;
         color: #000;
     }
-    
-    
+
+
     .item__link {
         display: inline-block;
         margin-bottom: 12px;
         color: $colorContrast;
     }
-    
+
     .sublist__item {
         margin-left: 20px;
         margin-bottom: 11px;
@@ -98,22 +102,21 @@
             margin-bottom: 20px;
         }
     }
-    
-    
-    
+
+
+
     .nav__item:last-child .sublist__item:last-child {
         margin-bottom: 0;
     }
-    
+
     .sublist__link {
         color: $colorNeutral;
     }
-    
+
     .list {
         @extend %fontStyle__400_14;
         list-style-type: none;
-        
+
     }
 
 }
-
