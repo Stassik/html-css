@@ -141,8 +141,10 @@
 
         &-title {
             display: flex;
-            list-style-type: none;
 
+            &::before {
+                display: none;
+            }
 
             &::after {
                 content: "";
