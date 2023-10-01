@@ -459,9 +459,8 @@ a {
 }
 .arrivals__select-title {
   display: flex;
-}
-.arrivals__select-title::marker {
-  content: "";
+  display: -webkit-box;
+  list-style-type: none;
 }
 .arrivals__select-title::after {
   content: "";
