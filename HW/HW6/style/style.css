@@ -461,9 +461,6 @@ a {
   display: flex;
   list-style-type: none;
 }
-.arrivals__select-title::before, .arrivals__select-title-title::-webkit-details-marker {
-  display: none;
-}
 .arrivals__select-title::after {
   content: "";
   display: block;

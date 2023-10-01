@@ -143,10 +143,6 @@
             display: flex;
             list-style-type: none;
 
-            &::before,
-            &-title::-webkit-details-marker {
-                display: none;
-            }
 
             &::after {
                 content: "";
