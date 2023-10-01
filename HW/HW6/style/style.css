@@ -471,6 +471,9 @@ a {
   background: url(../img/open.svg) no-repeat center;
   transition: transform 0.1s ease-in;
 }
+.arrivals__select details > summary:first-of-type {
+  display: none;
+}
 .arrivals__select[open] .arrivals__select-title::after {
   transform: rotate(-90deg);
 }

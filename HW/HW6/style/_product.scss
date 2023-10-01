@@ -156,6 +156,10 @@
             }
         }
 
+        details > summary:first-of-type {
+            display: none;
+        }
+
         &[open] &-title::after {
             transform: rotate(-90deg);
         }
