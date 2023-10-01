@@ -142,6 +142,7 @@
         &-title {
             display: flex;
             display: -webkit-box;
+            list-style-type: none;
 
             &::before {
                 display: none;
