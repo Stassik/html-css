@@ -12,11 +12,9 @@
     }
 
     &__title {
+        @include fontStyle(48px, 900, normal, 37px);
         position: relative;
-        font-size: 48px;
-        font-weight: 900;
         color: $bgColorDark;
-        line-height: 37px;
 
         &::before {
             position: absolute;
@@ -29,7 +27,7 @@
         }
 
         &_mini {
-            @include fontStyle_700(32px);
+            @include fontStyle(32px, 700, normal, normal);
         }
 
         &_pink {
@@ -75,7 +73,7 @@
     }
 
     &__title {
-        @include fontStyle_700(24px);
+        @include fontStyle(24px, 700, normal, normal);
         position: absolute;
         text-align: center;
         color: $colorContrast;
@@ -90,169 +88,152 @@
 }
 
 
-
-
-
-
-.acquisitions__content {
-    @extend %flexCenter;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.acquisitions__title {
-    @include fontStyle_400(30px);
-    margin-bottom: 6px;
-    color: $bgColorDark;
-}
-
-.acquisitions__text {
-    @extend %fontStyle__400_14;
-    margin-bottom: 48px;
-    color: #9F9F9F;
-    text-align: center;
-}
-
-.acquisitions__list {
-    @extend %flexCenterBetween;
-    flex-wrap: wrap;
-    margin-bottom: 48px;
-}
-
-.acquisitions__item {
-    @extend %flexCenterBetween;
-    flex-direction: column;
-    position: relative;
-    width: 32%;
-    margin-bottom: 2%;
-    overflow: hidden;
-}
-
-.img__block {
-    @extend %flexCenterCenter;
-    width: 100%;
-    height: 100%;
-    position: relative;
-    background-color: #F3EDED;
-    transition: all .6s;
-}
-
-.block__btn {
-    @extend %fontStyle__400_14;
-    display: none;
-    position: absolute;
-    padding: 11px 13px;
-    color: $colorSuperLight;
-    background: none;
-    border: 1px $colorSuperLight solid;
-    transition: all .6s;
-
-    &:hover {
-        @extend %btn_hover;
-    }
-
-    &:active {
-        @extend %btn_active;
-    }
-}
-
-.btn__icon {
-    margin-right: 11px;
-}
-
-.img__block:hover {
-    background-color: rgba(58, 56, 56, 0.86);
-    cursor: pointer;
-
-    & .item__photo {
-        z-index: -1;
-    }
-
-    & .block__btn {
+.acquisitions {
+    &__content {
         @extend %flexCenter;
-        cursor: pointer;
-    }
-}
-
-
-.item__photo {
-    width: 100%;
-}
-
-.item__info {
-    padding: 24px 16px;
-    background-color: #F8F8F8;
-}
-
-.item__title {
-    @include fontStyle_400(13px);
-    margin-bottom: 16px;
-}
-
-.item__text {
-    margin-bottom: 16px;
-    color: #5D5D5D;
-    font-size: 14px;
-    font-weight: 300;
-}
-
-.item__price {
-    @extend %fontStyle__400_16;
-    color: $colorContrast;
-}
-
-.acquisitions__btn {
-    @extend %fontStyle__400_16;
-    display: inline-block;
-    margin-bottom: 60px;
-    padding: 15px 39px;
-    border: 1px solid #FF6A6A;
-    background-color: $colorSuperLight;
-    color: $colorContrast;
-    transition: all .6s;
-
-    &:hover {
-        @extend %btn_hover;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
 
-    &:active {
-        @extend %btn_active;
+    &__title {
+        @include fontStyle(30px, 400, normal, normal);
+        margin-bottom: 6px;
+        color: $bgColorDark;
+    }
+
+    &__text {
+        @extend %fontStyle__400_14;
+        margin-bottom: 48px;
+        color: #9F9F9F;
+        text-align: center;
+    }
+
+    &__list {
+        @extend %flexCenterBetween;
+        flex-wrap: wrap;
+        margin-bottom: 48px;
+    }
+
+    &__item {
+        @extend %flexCenterBetween;
+        flex-direction: column;
+        position: relative;
+        width: 32%;
+        margin-bottom: 2%;
+        overflow: hidden;
+
+
+    }
+
+    .img__block {
+        @extend %flexCenterCenter;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: #F3EDED;
+        transition: all .6s;
+
+
+        &:hover {
+            background-color: rgba(58, 56, 56, 0.86);
+            cursor: pointer;
+
+            & .item__photo {
+                z-index: -1;
+            }
+
+            & .block__btn {
+                @extend %flexCenter;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .block__btn {
+        @extend %fontStyle__400_14;
+        display: none;
+        position: absolute;
+        padding: 11px 13px;
+        color: $colorSuperLight;
+        background: none;
+        border: 1px $colorSuperLight solid;
+        transition: all .6s;
+
+        &:hover {
+            @extend %btn_hover;
+            cursor: pointer;
+        }
+
+        &:active {
+            @extend %btn_active;
+        }
+    }
+
+    .btn__icon {
+        margin-right: 11px;
+    }
+
+    .item__photo {
+        width: 100%;
+    }
+
+    .item__info {
+        padding: 24px 16px;
+        background-color: #F8F8F8;
+    }
+
+    .item__title {
+        @include fontStyle(13px, 400, normal, normal);
+        margin-bottom: 16px;
+    }
+
+    .item__text {
+        @extend %fontStyle__300_14;
+        margin-bottom: 16px;
+        color: #5D5D5D;
+    }
+
+    .item__price {
+        @extend %fontStyle__400_16;
+        color: $colorContrast;
+    }
+
+
+
+    &__btn {
+        @extend %submitBtn;
+        margin-bottom: 60px;
+        padding: 15px 39px;
     }
 }
-
-
-
-
-
 
 .advantages {
     padding: 103px 0;
     background-color: $textColorDark;
     color: #FBFBFB;
-}
 
-.advantages__content {
-    display: flex;
-    justify-content: space-between;
-}
+    &__content {
+        display: flex;
+        justify-content: space-between;
+    }
 
-.advantages__item {
-    @extend %flexCenterBetween;
-    flex-direction: column;
-    width: 32%;
-    text-align: center;
-}
+    &__item {
+        @extend %flexCenterBetween;
+        flex-direction: column;
+        width: 32%;
+        text-align: center;
+    }
 
-.advantages__icon {
-    margin-bottom: 28px;
-}
+    &__icon {
+        margin-bottom: 28px;
+    }
 
-.advantages__title {
-    @include fontStyle_400(20px);
-    margin-bottom: 16px;
-}
+    &__title {
+        @include fontStyle(20px, 400, normal, normal);
+        margin-bottom: 16px;
+    }
 
-.advantages__text {
-    font-size: 14px;
-    font-weight: 300;
+    &__text {
+        @extend %fontStyle__300_14;
+    }
 }

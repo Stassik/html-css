@@ -57,7 +57,7 @@
 
     &__nav {
         position: absolute;
-        top: -650px;
+        top: -700px;
         right: -232px;
         padding: 32px;
         min-width: 232px;
@@ -78,7 +78,7 @@
 
 
     .nav__title {
-        @include fontStyle_700(14px);
+        @include fontStyle(14px, 700, normal, normal);
         margin-bottom: 24px;
         color: #000;
     }

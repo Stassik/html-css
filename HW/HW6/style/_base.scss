@@ -11,23 +11,47 @@
     align-items: center;
 }
 
+%fontStyle__300_14 {
+    @include fontStyle(14px, 300, normal, normal);
+}
+
 %fontStyle__400_14 {
-    @include fontStyle_400(14px);
+    @include fontStyle(14px, 400, normal, normal);
 }
 
 %fontStyle__400_16 {
-    @include fontStyle_400(16px);
+    @include fontStyle(16px, 400, normal, normal);
 }
+
 
 %btn_hover {
     background-color: #FF6A6A;
     color: $colorSuperLight;
-    cursor: pointer;
 }
 
 %btn_active {
     background-color: $colorNeutral;
     border-color: $colorNeutral;
+}
+
+
+%submitBtn {
+    @extend %fontStyle__400_16;
+    display: inline-block;
+    border: 1px solid #FF6A6A;
+    background-color: $colorSuperLight;
+    color: $colorContrast;
+    transition: all .6s;
+
+    &:hover {
+        @extend %btn_hover;
+        cursor: pointer;
+    }
+
+    &:active {
+        @extend %btn_active;
+    }
+
 }
 
 

@@ -4,16 +4,9 @@
 }
 
 
-@mixin fontStyle_400($fontSize) {
+@mixin fontStyle($fontSize, $fontWeight, $fontStyle, $fontHeight) {
     font-size: $fontSize;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-@mixin fontStyle_700($fontSize) {
-    font-size: $fontSize;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+    font-style: $fontStyle;
+    font-weight: $fontWeight;
+    line-height: $fontHeight;
 }
