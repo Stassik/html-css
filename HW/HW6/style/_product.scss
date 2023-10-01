@@ -141,8 +141,10 @@
 
         &-title {
             display: flex;
+            list-style-type: none;
 
-            &::before {
+            &::before,
+            &-title::-webkit-details-marker {
                 display: none;
             }
 
