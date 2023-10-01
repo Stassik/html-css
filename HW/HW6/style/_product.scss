@@ -207,6 +207,10 @@
             }
         }
 
+        &-input[type="number"] {
+            width: 45px;
+        }
+
         &:first-child {
             margin-left: 0;
         }

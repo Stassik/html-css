@@ -505,6 +505,9 @@ a {
 .arrivals__select-input[type=radio]:checked + label, .arrivals__select-input[type=radio]:hover + label {
   border: 3px solid #F16D7F;
 }
+.arrivals__select-input[type=number] {
+  width: 45px;
+}
 .arrivals__select:first-child {
   margin-left: 0;
 }
