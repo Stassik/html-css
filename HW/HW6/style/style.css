@@ -124,6 +124,7 @@ a {
   padding: 32px;
   min-width: 232px;
   background-color: #fff;
+  filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   transition: top 1s;
   z-index: 10;
 }
@@ -158,6 +159,9 @@ a {
 }
 .header .sublist__link {
   color: #6F6E6E;
+}
+.header .sublist__link:hover {
+  color: #F16D7F;
 }
 .header .list {
   list-style-type: none;

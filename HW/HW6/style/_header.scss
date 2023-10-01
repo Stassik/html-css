@@ -66,6 +66,7 @@
         padding: 32px;
         min-width: 232px;
         background-color: $colorSuperLight;
+        filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
         transition: top 1s;
         z-index: 10;
     }
@@ -111,6 +112,10 @@
 
     .sublist__link {
         color: $colorNeutral;
+
+        &:hover {
+            color: $colorContrast;
+        }
     }
 
     .list {
