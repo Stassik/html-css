@@ -459,6 +459,7 @@ a {
 }
 .arrivals__select-title {
   display: flex;
+  display: -webkit-flex;
 }
 .arrivals__select-title::before {
   display: none;

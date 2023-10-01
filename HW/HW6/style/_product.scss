@@ -141,6 +141,7 @@
 
         &-title {
             display: flex;
+            display: -webkit-flex;
 
             &::before {
                 display: none;
