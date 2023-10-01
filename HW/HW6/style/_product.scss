@@ -142,7 +142,9 @@
         &-title {
             display: flex;
 
-
+            &::before {
+                display: none;
+            }
 
             &::after {
                 content: "";
@@ -152,10 +154,6 @@
                 background: url(../img/open.svg) no-repeat center;
                 transition: transform .1s ease-in;
             }
-        }
-
-        details>summary:first-of-type {
-            display: none;
         }
 
         &[open] &-title::after {

@@ -460,6 +460,9 @@ a {
 .arrivals__select-title {
   display: flex;
 }
+.arrivals__select-title::before {
+  display: none;
+}
 .arrivals__select-title::after {
   content: "";
   display: block;
@@ -467,9 +470,6 @@ a {
   margin-left: 5px;
   background: url(../img/open.svg) no-repeat center;
   transition: transform 0.1s ease-in;
-}
-.arrivals__select details > summary:first-of-type {
-  display: none;
 }
 .arrivals__select[open] .arrivals__select-title::after {
   transform: rotate(-90deg);
