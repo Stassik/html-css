@@ -141,10 +141,8 @@
 
         &-title {
             display: flex;
-            display: -webkit-box;
-            list-style-type: none;
 
-            &::before {
+            &::marker {
                 display: none;
             }
 

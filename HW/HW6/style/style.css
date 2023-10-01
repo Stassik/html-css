@@ -459,10 +459,8 @@ a {
 }
 .arrivals__select-title {
   display: flex;
-  display: -webkit-box;
-  list-style-type: none;
 }
-.arrivals__select-title::before {
+.arrivals__select-title::marker {
   display: none;
 }
 .arrivals__select-title::after {
