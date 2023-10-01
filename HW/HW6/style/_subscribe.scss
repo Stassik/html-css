@@ -1,0 +1,74 @@
+.subscribe {
+    padding: 97px 0 126px;
+    background-image: url(../img/subscribe.jpg);
+    background-size: cover;
+
+    &__content {
+        @extend %flexCenterBetween;
+    }
+
+    &__left {
+        @include fontStyle(20px, 400, italic, normal);
+        width: 32%;
+        text-align: center;
+        color: $textColorDark;
+    }
+
+    &__img {
+        margin-bottom: 30px;
+        border-radius: 100px;
+    }
+
+    &__right {
+        width: 48%;
+    }
+
+    &__title {
+        @include fontStyle(24px, 700, normal, 130%);
+        display: inline-block;
+        margin-bottom: 32px;
+        color: $textColorDark;
+        text-align: center;
+
+        &_mini {
+            @include fontStyle(18px, 400, normal, normal);
+        }
+    }
+
+    &__form {
+        display: flex;
+    
+    }
+
+    &__input {
+        @extend %fontStyle__400_14;
+        padding: 7px 12% 7px 22px;
+        width: 48%;
+        height: 49px;
+        background-color: #E1E1E1;
+        border: none;
+        border-radius: 30px 0 0 30px;
+        color: $textColorDark;
+        opacity: 0.7;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    &__btn {
+        @extend %fontStyle__400_14;
+        padding: 7px 22px;
+        border: none;
+        border-radius: 0 30px 30px 0;
+        background-color: $colorContrast;
+        color: $colorSuperLight;
+        transition: all .6s;
+
+        &:hover {
+            @extend %btn_active;
+            cursor: pointer;
+        }
+    }
+
+}
