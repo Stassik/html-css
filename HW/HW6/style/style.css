@@ -460,9 +460,6 @@ a {
 .arrivals__select-title {
   display: flex;
 }
-.arrivals__select-title::before {
-  display: none;
-}
 .arrivals__select-title::after {
   content: "";
   display: block;

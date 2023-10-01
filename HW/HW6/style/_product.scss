@@ -142,9 +142,7 @@
         &-title {
             display: flex;
 
-            &::before {
-                display: none;
-            }
+
 
             &::after {
                 content: "";
@@ -156,7 +154,7 @@
             }
         }
 
-        details > summary:first-of-type {
+        details>summary:first-of-type {
             display: none;
         }
 
