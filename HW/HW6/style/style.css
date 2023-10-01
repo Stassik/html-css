@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap");
-.footer__link, .arrivals__select-input[type=radio] + .arrivals__select-label, .acquisitions .img__block, .topical__item, .header__cart::after {
+.footer__link, .arrivals__select-input + .arrivals__select-label, .acquisitions .img__block, .topical__item, .header__cart::after {
   justify-content: center;
 }
 
@@ -7,7 +7,7 @@
   justify-content: space-between;
 }
 
-.arrivals__selection, .acquisitions .img__block:hover .block__btn, .acquisitions__content, .main__content, .header__icon, .header__right, .header__left, .footer__link, .arrivals__select-input[type=radio] + .arrivals__select-label, .acquisitions .img__block, .topical__item, .header__cart::after, .footer__content, .subscribe__content, .arrivals__head-content, .advantages__item, .acquisitions__item, .acquisitions__list, .topical__content, .header__content {
+.arrivals__selection, .acquisitions .img__block:hover .block__btn, .acquisitions__content, .main__content, .header__icon, .header__right, .header__left, .footer__link, .arrivals__select-input + .arrivals__select-label, .acquisitions .img__block, .topical__item, .header__cart::after, .footer__content, .subscribe__content, .arrivals__head-content, .advantages__item, .acquisitions__item, .acquisitions__list, .topical__content, .header__content {
   display: flex;
   align-items: center;
 }
@@ -483,20 +483,20 @@ a {
   background-color: #fff;
   border: 1px solid #EAEAEA;
 }
-.arrivals__select-input[type=radio] + .arrivals__select-label {
+.arrivals__select-input + .arrivals__select-label {
   width: 30px;
   height: 30px;
   margin-bottom: 5px;
   background-color: #fff;
   border: 1px solid #EAEAEA;
 }
-.arrivals__select-input[type=radio] + .arrivals__select-label_blue {
+.arrivals__select-input + .arrivals__select-label_blue {
   background-color: blue;
 }
-.arrivals__select-input[type=radio] + .arrivals__select-label_black {
+.arrivals__select-input + .arrivals__select-label_black {
   background-color: black;
 }
-.arrivals__select-input[type=radio] + .arrivals__select-label_white {
+.arrivals__select-input + .arrivals__select-label_white {
   background-color: darkgreen;
 }
 .arrivals__select-input[type=radio] {

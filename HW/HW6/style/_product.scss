@@ -172,7 +172,7 @@
         }
 
 
-        &-input[type="radio"]+&-label {
+        &-input+&-label {
             @extend %flexCenterCenter;
             width: 30px;
             height: 30px;
