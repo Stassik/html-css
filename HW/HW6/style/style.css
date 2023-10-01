@@ -461,7 +461,7 @@ a {
   display: flex;
 }
 .arrivals__select-title::marker {
-  display: none;
+  content: "";
 }
 .arrivals__select-title::after {
   content: "";
