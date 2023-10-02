@@ -125,7 +125,7 @@ a {
   min-width: 232px;
   background-color: #fff;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
-  transition: top 1s;
+  transition: top 0.7s ease-out;
   z-index: 10;
 }
 .header__item:hover {
