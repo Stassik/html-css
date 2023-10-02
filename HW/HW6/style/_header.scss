@@ -30,11 +30,11 @@
         margin-left: 30px;
     }
 
-    &__burger-input {
-        display: none;
+    &__burger {
+        display: flex;
     }
 
-    #headerBurger:checked~&__nav {
+    &__item[open] &__nav {
         top: 53px;
     }
 

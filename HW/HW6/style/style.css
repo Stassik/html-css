@@ -95,10 +95,10 @@ a {
 .header__icon {
   margin-left: 30px;
 }
-.header__burger-input {
-  display: none;
+.header__burger {
+  display: flex;
 }
-#headerBurger:checked ~ .header__nav {
+.header__item[open] .header__nav {
   top: 53px;
 }
 .header__cart {
