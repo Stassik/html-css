@@ -20,12 +20,17 @@
 
         a {
             color: #636363;
+
+            &:hover {
+                color: $colorContrast;
+            }
         }
 
         .active {
             color: $colorContrast;
             font-weight: 700;
         }
+
     }
 
     &__product {

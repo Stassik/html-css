@@ -95,10 +95,10 @@ a {
 .header__icon {
   margin-left: 30px;
 }
-.header__burger {
-  display: flex;
+.header__burger-input {
+  display: none;
 }
-.header__item[open] .header__nav {
+#headerBurger:checked ~ .header__nav {
   top: 53px;
 }
 .header__cart {
@@ -126,7 +126,6 @@ a {
   background-color: #fff;
   filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
   transition: top 0.7s ease-out;
-  -webkit-transition: top 0.7s ease-out;
   z-index: 10;
 }
 .header__item:hover {
@@ -165,6 +164,7 @@ a {
   color: #F16D7F;
 }
 .header .list {
+  padding: 0;
   list-style-type: none;
 }
 
@@ -370,6 +370,9 @@ a {
 }
 .arrivals__breadcrumb a {
   color: #636363;
+}
+.arrivals__breadcrumb a:hover {
+  color: #F16D7F;
 }
 .arrivals__breadcrumb .active {
   color: #F16D7F;

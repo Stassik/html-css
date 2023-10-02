@@ -30,11 +30,11 @@
         margin-left: 30px;
     }
 
-    &__burger {
-        display: flex;
+    &__burger-input {
+        display: none;
     }
 
-    &__item[open] &__nav {
+    #headerBurger:checked~&__nav {
         top: 53px;
     }
 
@@ -68,7 +68,6 @@
         background-color: $colorSuperLight;
         filter: drop-shadow(6px 4px 35px rgba(0, 0, 0, 0.21));
         transition: top .7s ease-out;
-        -webkit-transition: top .7s ease-out;
         z-index: 10;
     }
 
@@ -120,6 +119,7 @@
     }
 
     .list {
+        padding: 0;
         @extend %fontStyle__400_14;
         list-style-type: none;
 
