@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 150px;
+}
+
 body {
     background-color: #020A18;
     font-family: 'Open Sans', sans-serif;
@@ -50,11 +55,13 @@ a {
     font-size: 16px;
     font-weight: 600;
     color: #fff;
+    transition: color .3s ease-out;
 }
 
 .header__link:hover {
     color: #3A68B8;
 }
+
 
 .main {
     margin-bottom: 157px;
@@ -117,6 +124,7 @@ a {
     border-radius: 5px;
     background: #3A68B8;
     cursor: pointer;
+    transition: all .3s ease-out;
 }
 
 .btn__img {
@@ -126,6 +134,11 @@ a {
 .btn:hover {
     background-color: #fff;
     color: #3A68B8;
+}
+
+.btn:active {
+    background-color: #132035;
+    color: #fff;
 }
 
 .main__btn {
@@ -173,18 +186,16 @@ a {
 .services__item {
     width: 32%;
     margin-bottom: 2%;
-
-
-
-
     padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
     border-radius: 10px;
     background: #132035;
+    transition: all .3s ease-in-out;
 
 }
+
 
 
 .item__big {
@@ -232,6 +243,16 @@ a {
     margin-bottom: 0;
     text-align: center;
     font-size: 16px;
+}
+
+
+.services__item:hover {
+    cursor: pointer;
+    background-color: #3A68B8;
+}
+
+.services__item:hover .services__title, .services__item:hover .services__text {
+    opacity: 1;
 }
 
 .wrap {
