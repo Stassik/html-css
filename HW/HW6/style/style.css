@@ -615,6 +615,8 @@ a {
 .footer__list {
   display: flex;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .footer__link {
   width: 32px;
@@ -832,6 +834,8 @@ a {
     text-align: center;
   }
   .footer__social {
+    display: flex;
+    justify-content: center;
     margin-bottom: 40px;
     order: -1;
   }
