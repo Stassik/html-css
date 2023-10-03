@@ -99,7 +99,9 @@ a {
   display: none;
 }
 #headerBurger:checked ~ .header__nav {
-  top: 53px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 .header__cart {
   position: relative;
@@ -118,14 +120,16 @@ a {
 }
 .header__nav {
   position: absolute;
-  top: -700px;
+  top: 53px;
   right: -232px;
   padding: 32px;
   min-width: 232px;
   background-color: #fff;
-  transition: top 0.7s ease-out;
-  -webkit-transition: top 0.7s ease-out;
-  z-index: 10;
+  transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
+  transform: translateY(-16px);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 100;
 }
 .header__item:hover {
   cursor: pointer;
