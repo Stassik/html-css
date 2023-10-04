@@ -476,7 +476,7 @@ a {
 }
 .arrivals__select-title {
   display: flex;
-  display: box;
+  display: -webkit-box;
 }
 .arrivals__select-title::after {
   content: "";
