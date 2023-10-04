@@ -1,7 +1,13 @@
 .header {
-    padding-bottom: 18px;
-    padding-top: 18px;
-    background-color: $bgColorDark;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+
+    &__bg {
+        padding-bottom: 18px;
+        padding-top: 18px;
+        background-color: $bgColorDark;
+    }
 
 
     &__content {
@@ -35,9 +41,7 @@
     }
 
     #headerBurger:checked~&__nav {
-        opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+        top: 53px;
     }
 
 
@@ -62,16 +66,14 @@
 
     &__nav {
         position: absolute;
-        top: 53px;
+        top: -700px;
         right: -232px;
         padding: 32px;
         min-width: 232px;
         background-color: $colorSuperLight;
-        transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
-        transform: translateY(-16px);
-        opacity: 0;
-        visibility: hidden;
-        z-index: 100;
+        -webkit-transition: top .7s ease-in-out;
+        transition: top .7s ease-in-out;
+        z-index: -1;
     }
 
 

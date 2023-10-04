@@ -80,6 +80,11 @@ a {
 }
 
 .header {
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+}
+.header__bg {
   padding-bottom: 18px;
   padding-top: 18px;
   background-color: #222;
@@ -99,9 +104,7 @@ a {
   display: none;
 }
 #headerBurger:checked ~ .header__nav {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
+  top: 53px;
 }
 .header__cart {
   position: relative;
@@ -120,16 +123,13 @@ a {
 }
 .header__nav {
   position: absolute;
-  top: 53px;
+  top: -700px;
   right: -232px;
   padding: 32px;
   min-width: 232px;
   background-color: #fff;
-  transition: opacity 0.4s, visibility 0.4s, transform 0.4s;
-  transform: translateY(-16px);
-  opacity: 0;
-  visibility: hidden;
-  z-index: 100;
+  transition: top 0.7s ease-in-out;
+  z-index: -1;
 }
 .header__item:hover {
   cursor: pointer;
@@ -172,6 +172,7 @@ a {
 }
 
 .main {
+  padding-top: 77px;
   margin-bottom: 65px;
   background-color: #F1E4E6;
 }
