@@ -473,10 +473,10 @@ a {
   margin-left: 22px;
   position: relative;
   color: #6F6E6E;
+  list-style-type: none;
 }
 .arrivals__select-title {
   display: flex;
-  display: -webkit-box;
 }
 .arrivals__select-title::after {
   content: "";
