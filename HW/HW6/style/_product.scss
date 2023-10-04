@@ -144,13 +144,10 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
+        list-style-type: none;
 
         &-title {
             display: flex;
-
-            &::before {
-                display: none;
-            }
 
             &::after {
                 content: "";
@@ -222,24 +219,6 @@
             margin-left: 0;
         }
     }
-
-
-    &__select[open]>&__select-title {
-        list-style-type: none;
-    }
-
-    &__select>&__select-title {
-        list-style-type: none;
-    }
-
-    //     &::after {
-    //         content:"";
-    //         display: block;
-    //         width: 10px;
-    //         margin-left: 9px;
-    //         background: url(../img/open.svg) no-repeat center;
-    //     }    
-    // }
 
     &__btn {
         @extend %submitBtn;
