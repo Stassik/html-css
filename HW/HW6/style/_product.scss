@@ -159,6 +159,7 @@
                 margin-left: 5px;
                 background: url(../img/open.svg) no-repeat center;
                 transition: transform .1s ease-in;
+                -webkit-transition: transform .1s ease-in;
             }
         }
 

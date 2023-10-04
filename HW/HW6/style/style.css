@@ -487,6 +487,7 @@ a {
   margin-left: 5px;
   background: url(../img/open.svg) no-repeat center;
   transition: transform 0.1s ease-in;
+  -webkit-transition: transform 0.1s ease-in;
 }
 .arrivals__select[open] .arrivals__select-title::after {
   transform: rotate(-90deg);
