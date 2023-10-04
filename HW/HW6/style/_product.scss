@@ -144,11 +144,10 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
-        list-style-type: none;
 
         &-title {
             display: flex;
-            list-style-type: none;
+            display: box;
 
             &::after {
                 content: "";
