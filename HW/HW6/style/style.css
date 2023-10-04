@@ -358,6 +358,9 @@ a {
   line-height: normal;
   margin-bottom: 16px;
 }
+.arrivals {
+  padding-top: 77px;
+}
 .arrivals__head {
   background-color: #F8F3F4;
 }
@@ -524,6 +527,12 @@ a {
 }
 .arrivals__select:first-child {
   margin-left: 0;
+}
+.arrivals__select[open] > .arrivals__select-title {
+  list-style-type: none;
+}
+.arrivals__select > .arrivals__select-title {
+  list-style-type: none;
 }
 .arrivals__btn {
   margin-bottom: 0;

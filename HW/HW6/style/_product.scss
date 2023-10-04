@@ -1,4 +1,5 @@
 .arrivals {
+    padding-top: 77px;
 
     &__head {
         background-color: #F8F3F4;
@@ -222,12 +223,14 @@
     }
 
 
-    // &__select[open] > &__select-title:first-of-type {
-    //     list-style-type: none;
-    // }
+    &__select[open]>&__select-title {
+        list-style-type: none;
+    }
 
-    // &__select > &__select-title:first-of-type {
-    //     list-style-type: none;
+    &__select>&__select-title {
+        list-style-type: none;
+    }
+
     //     &::after {
     //         content:"";
     //         display: block;
