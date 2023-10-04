@@ -26,7 +26,6 @@
 
     &__right {
         @extend %flexCenter;
-        position: relative;
         font-size: 26px;
         color: $colorLight;
     }
@@ -67,7 +66,7 @@
     &__nav {
         position: absolute;
         top: -700px;
-        right: -232px;
+        right: 0;
         padding: 32px;
         min-width: 232px;
         background-color: $colorSuperLight;

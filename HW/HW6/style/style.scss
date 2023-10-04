@@ -21,9 +21,13 @@
 
 
 
-@media (max-width: 1599px) {
+@media (min-width: 1921px) {
+    .header__right {
+        position: relative;
+    }
+
     .header__nav {
-        right: 0;
+        right: -232px;
     }
 
 }

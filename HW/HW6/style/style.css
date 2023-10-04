@@ -93,7 +93,6 @@ a {
   margin-right: 11px;
 }
 .header__right {
-  position: relative;
   font-size: 26px;
   color: #E8E8E8;
 }
@@ -124,7 +123,7 @@ a {
 .header__nav {
   position: absolute;
   top: -700px;
-  right: -232px;
+  right: 0;
   padding: 32px;
   min-width: 232px;
   background-color: #fff;
@@ -639,9 +638,12 @@ a {
   fill: #fff;
 }
 
-@media (max-width: 1599px) {
+@media (min-width: 1921px) {
+  .header__right {
+    position: relative;
+  }
   .header__nav {
-    right: 0;
+    right: -232px;
   }
 }
 @media (max-width: 1160px) {
