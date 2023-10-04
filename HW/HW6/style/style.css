@@ -477,6 +477,7 @@ a {
 }
 .arrivals__select-title {
   display: flex;
+  list-style-type: none;
 }
 .arrivals__select-title::after {
   content: "";

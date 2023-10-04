@@ -148,6 +148,7 @@
 
         &-title {
             display: flex;
+            list-style-type: none;
 
             &::after {
                 content: "";
