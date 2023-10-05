@@ -147,7 +147,7 @@
 
 
         &-title {
-            // display: flex;
+            display: flex;
             list-style: none;
 
             &::after {
@@ -155,7 +155,6 @@
                 display: block;
                 width: 15px;
                 margin-left: 5px;
-                background: url(../img/open.svg) no-repeat center;
                 transition: transform .1s ease-in;
                 -webkit-transition: transform .1s ease-in;
             }
