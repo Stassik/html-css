@@ -143,11 +143,10 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
+        list-style: none;
 
 
         &-title {
-            display: flex;
-            align-items: center;
             list-style: none;
 
             &::before {
