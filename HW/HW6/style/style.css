@@ -473,7 +473,6 @@ a {
 }
 .arrivals__select-title {
   display: flex;
-  list-style: none;
 }
 .arrivals__select-title::after {
   content: url(../img/open.svg);
