@@ -143,11 +143,12 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
-        list-style-type: none;
-        
+        list-style: none;
+
 
         &-title {
             display: flex;
+            list-style: none;
 
             &::after {
                 content: "";
@@ -158,7 +159,15 @@
                 transition: transform .1s ease-in;
                 -webkit-transition: transform .1s ease-in;
             }
+
+
         }
+
+        &-title::-webkit-details-marker {
+            display: none;
+        }
+
+
 
         &[open] &-title::after {
             transform: rotate(-90deg);
@@ -173,7 +182,7 @@
             z-index: 100;
             background-color: $colorSuperLight;
             border: 1px solid #EAEAEA;
-            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21); 
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         }
 
 
