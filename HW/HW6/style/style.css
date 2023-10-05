@@ -469,10 +469,10 @@ a {
   margin-left: 22px;
   position: relative;
   color: #6F6E6E;
-  list-style: none;
 }
 .arrivals__select-title {
   display: flex;
+  list-style: none;
 }
 .arrivals__select-title::after {
   content: url(../img/open.svg);
