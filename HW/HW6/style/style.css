@@ -479,13 +479,14 @@ a {
   width: 15px;
   margin-left: 5px;
   transition: transform 0.1s ease-in;
-  -webkit-transition: transform 0.1s ease-in;
+  -webkit-transition: -webkit-transform 0.1s ease-in;
 }
 .arrivals__select-title::-webkit-details-marker {
   display: none;
 }
 .arrivals__select[open] .arrivals__select-title::after {
   transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
 }
 .arrivals__select-content {
   position: absolute;
