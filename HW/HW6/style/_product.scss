@@ -149,7 +149,7 @@
         &-title {
             display: flex;
 
-            &::after {
+            &::before {
                 content: "";
                 display: block;
                 width: 15px;
