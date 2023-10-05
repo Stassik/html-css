@@ -150,6 +150,7 @@
             display: flex;
 
             &::before {
+                content: "+";
                 display: none;
             }
 
