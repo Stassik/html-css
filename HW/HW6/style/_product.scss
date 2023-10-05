@@ -154,7 +154,7 @@
                 width: 15px;
                 margin-left: 5px;
                 transition: transform .1s ease-in;
-                -webkit-transition: transform .1s ease-in;
+                -webkit-transition: -webkit-transform .1s ease-in;
             }
 
 
@@ -168,6 +168,7 @@
 
         &[open] &-title::after {
             transform: rotate(-90deg);
+            -webkit-transform: rotate(-90deg);
         }
 
 
