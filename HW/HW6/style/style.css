@@ -475,7 +475,7 @@ a {
   align-items: center;
   list-style: none;
 }
-.arrivals__select-title::after {
+.arrivals__select-title::before {
   content: url(../img/open.svg);
   display: flex;
   align-items: center;
