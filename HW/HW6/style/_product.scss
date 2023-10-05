@@ -143,22 +143,19 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
-        list-style: none;
 
 
         &-title {
             display: flex;
-
-            &::before {
-                content: "+";
-            }
+            align-items: center;
+            list-style: none;
 
             &::after {
-                content: "";
-                display: block;
+                content: url(../img/open.svg);
+                display: flex;
+                align-items: center;
                 width: 15px;
                 margin-left: 5px;
-                background: url(../img/open.svg) no-repeat center;
                 transition: transform .1s ease-in;
                 -webkit-transition: transform .1s ease-in;
             }
