@@ -148,8 +148,6 @@
         &-title {
             display: flex;
 
-            list-style: none;
-
             &::after {
                 content: url(../img/open.svg);
                 display: block;
