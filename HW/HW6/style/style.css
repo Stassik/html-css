@@ -102,7 +102,7 @@ a {
   display: none;
 }
 #headerBurger:checked ~ .header__nav {
-  top: 53px;
+  top: 77px;
 }
 .header__cart {
   position: relative;
@@ -469,7 +469,7 @@ a {
   margin-left: 22px;
   position: relative;
   color: #6F6E6E;
-  list-style-type: none;
+  list-style: none;
 }
 .arrivals__select-title {
   display: flex;

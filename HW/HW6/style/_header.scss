@@ -39,7 +39,7 @@
     }
 
     #headerBurger:checked~&__nav {
-        top: 53px;
+        top: 77px;
     }
 
 
@@ -69,7 +69,7 @@
         padding: 32px;
         min-width: 232px;
         background-color: $colorSuperLight;
-        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21); 
+        box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         -webkit-transition: top .7s ease-in-out;
         transition: top .7s ease-in-out;
         z-index: -1;

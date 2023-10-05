@@ -143,8 +143,8 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
-        list-style-type: none;
-        
+        list-style: none;
+
 
         &-title {
             display: flex;
@@ -173,7 +173,7 @@
             z-index: 100;
             background-color: $colorSuperLight;
             border: 1px solid #EAEAEA;
-            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21); 
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
         }
 
 
