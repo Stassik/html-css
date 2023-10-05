@@ -150,6 +150,10 @@
             display: flex;
 
             &::before {
+                display: none;
+            }
+
+            &::after {
                 content: "";
                 display: block;
                 width: 15px;
