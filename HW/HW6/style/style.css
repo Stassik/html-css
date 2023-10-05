@@ -479,7 +479,6 @@ a {
   width: 15px;
   margin-left: 5px;
   transition: transform 0.1s ease-in;
-  -webkit-transition: -webkit-transform 0.1s ease-in;
 }
 .arrivals__select-title::-webkit-details-marker {
   display: none;
