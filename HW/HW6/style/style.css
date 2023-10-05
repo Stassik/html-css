@@ -469,19 +469,22 @@ a {
   margin-left: 22px;
   position: relative;
   color: #6F6E6E;
-  list-style-type: none;
+  list-style: none;
 }
 .arrivals__select-title {
-  display: flex;
+  list-style: none;
 }
 .arrivals__select-title::after {
-  content: "";
+  content: url(../img/open.svg);
   display: block;
   width: 15px;
   margin-left: 5px;
   background: url(../img/open.svg) no-repeat center;
   transition: transform 0.1s ease-in;
   -webkit-transition: transform 0.1s ease-in;
+}
+.arrivals__select-title::-webkit-details-marker {
+  display: none;
 }
 .arrivals__select[open] .arrivals__select-title::after {
   transform: rotate(-90deg);
