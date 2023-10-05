@@ -143,18 +143,18 @@
         margin-left: 22px;
         position: relative;
         color: $colorNeutral;
-        list-style: none;
-
+        list-style-type: none;
+        
 
         &-title {
-            list-style: none;
+            display: flex;
 
-            &::before {
-                content: url(../img/open.svg);
-                display: flex;
-                align-items: center;
+            &::after {
+                content: "";
+                display: block;
                 width: 15px;
                 margin-left: 5px;
+                background: url(../img/open.svg) no-repeat center;
                 transition: transform .1s ease-in;
                 -webkit-transition: transform .1s ease-in;
             }
@@ -173,7 +173,7 @@
             z-index: 100;
             background-color: $colorSuperLight;
             border: 1px solid #EAEAEA;
-            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21);
+            box-shadow: 6px 4px 35px 0px rgba(0, 0, 0, 0.21); 
         }
 
 

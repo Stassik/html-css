@@ -469,17 +469,17 @@ a {
   margin-left: 22px;
   position: relative;
   color: #6F6E6E;
-  list-style: none;
+  list-style-type: none;
 }
 .arrivals__select-title {
-  list-style: none;
-}
-.arrivals__select-title::before {
-  content: url(../img/open.svg);
   display: flex;
-  align-items: center;
+}
+.arrivals__select-title::after {
+  content: "";
+  display: block;
   width: 15px;
   margin-left: 5px;
+  background: url(../img/open.svg) no-repeat center;
   transition: transform 0.1s ease-in;
   -webkit-transition: transform 0.1s ease-in;
 }
