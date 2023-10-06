@@ -111,7 +111,6 @@
     &__list {
         @extend %flexCenterBetween;
         flex-wrap: wrap;
-        margin-bottom: 48px;
     }
 
     &__item {
@@ -121,8 +120,6 @@
         width: 32%;
         margin-bottom: 2%;
         overflow: hidden;
-
-
     }
 
     .img__block {
@@ -202,7 +199,8 @@
 
     &__btn {
         @extend %submitBtn;
-        margin-bottom: 60px;
+        margin-top: calc(48px - 2%);
+        margin-bottom: 95px;
         padding: 15px 39px;
     }
 }

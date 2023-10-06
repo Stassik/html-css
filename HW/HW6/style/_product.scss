@@ -147,26 +147,16 @@
 
         &-title {
             display: flex;
-
-            &::after {
-                content: url(../img/open.svg);
-                display: block;
-                width: 15px;
-                margin-left: 5px;
-                transition: transform .1s ease-in;
-                transition: -webkit-transform .1s ease-in;
-            }
-
-
+            align-items: center;
         }
 
-        &-title::-webkit-details-marker {
-            display: none;
+        &-icon {
+            margin-left: 5px;
+            transition: transform .1s ease-in;
+            transition: -webkit-transform .1s ease-in;
         }
 
-
-
-        &[open] &-title::after {
+        &[open] &-icon {
             transform: rotate(-90deg);
             -webkit-transform: rotate(-90deg);
         }
@@ -175,8 +165,9 @@
         &-content {
             position: absolute;
             top: 25px;
-            right: 0;
-            padding: 15px 30px;
+            left: -9px;
+            padding: 10px;
+            padding-right: 30px;
             z-index: 100;
             background-color: $colorSuperLight;
             border: 1px solid #EAEAEA;
@@ -248,7 +239,7 @@
     }
 
     & .acquisitions {
-        margin-bottom: 80px;
+        margin-bottom: calc(128px - 2%);
     }
 
 }

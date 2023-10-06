@@ -60,6 +60,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+
 }
 
 body {
@@ -80,4 +82,13 @@ a {
 .center {
     max-width: $centerDesctopWidth;
     margin: 0 auto;
+}
+
+summary {
+    list-style-type: none;
+
+    &::-webkit-details-marker {
+        display: none;
+        
+    }
 }
