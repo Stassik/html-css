@@ -13,7 +13,7 @@
 
     &__filter {
         position: relative;
-        z-index: 1000;
+        z-index: 100;
 
         &-box {
             margin-left: -16px;
@@ -81,6 +81,7 @@
         &-item {
             @extend %fontStyle__400_14;
             margin-bottom: 18px;
+            color: $colorNeutral;
 
             &:last-child {
                 margin-bottom: 0;
@@ -90,6 +91,11 @@
                     padding-bottom: 0;
                 }
             }
+
+            &[open] .item__title {
+                color: $colorContrast;
+            }
+          
         }
 
         .item__title {
@@ -107,15 +113,16 @@
             &__item {
                 margin-bottom: 11px;
                 list-style-type: none;
-    
+
                 &:last-child {
                     margin-bottom: 0;
                 }
-    
+
             }
 
             &__link {
                 color: $colorNeutral;
+
                 &:hover {
                     color: $colorContrast;
                 }
@@ -172,6 +179,7 @@
             align-items: center;
             user-select: none;
             margin-bottom: 9px;
+
             &:last-child {
                 margin-bottom: 0;
             }
@@ -219,7 +227,8 @@
             border: none;
             color: $paginationColor;
 
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
                 color: $colorContrast;
                 background-color: $colorSuperLight;
                 outline: 0;
