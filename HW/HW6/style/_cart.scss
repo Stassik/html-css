@@ -176,6 +176,7 @@
         .cart__btn {
             @include fontStyle(11px, 300);
             align-self: flex-start;
+            padding: 11px 15px;
             color: $colorNeutralText;
 
             &:hover {

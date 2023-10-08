@@ -874,6 +874,7 @@ summary::-webkit-details-marker {
   font-weight: 300;
   line-height: normal;
   align-self: flex-start;
+  padding: 11px 15px;
   color: #A4A4A4;
 }
 .cart__form .cart__btn:hover {
