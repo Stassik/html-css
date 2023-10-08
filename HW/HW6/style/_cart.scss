@@ -1,5 +1,7 @@
 .cart {
     padding: 96px 0 128px;
+    display: flex;
+    justify-content: space-between;
 
     &__info {
         // display: flex;
@@ -95,7 +97,7 @@
 
                 &-item:not(:last-child) {
                     margin-bottom: 5px;
-                } 
+                }
 
                 &-span {
                     margin-left: 4px;
@@ -115,25 +117,126 @@
             @extend %flexCenterBetween;
             margin-top: 72px;
         }
+    }
 
+    &__btn {
+        @extend %fontStyle__300_14;
+        padding: 17px 40px;
+        background-color: $colorSuperLight;
+        border: 1px solid $colorNeutralText;
+        color: #000;
+        transition: all .3s ease-in-out;
 
-        &-btn {
-            @extend %fontStyle__300_14;
-            padding: 17px 40px;
-            background-color: #fff;
-            border: 1px solid #A4A4A4;
-            color: #000;
-            transition: all .3s ease-in-out;
+        &:hover {
+            @extend %btn_hover;
+            cursor: pointer;
+            border-color: $colorSuperLight;
+        }
+
+        &:active {
+            @extend %btn_active;
+        }
+    }
+
+    &__order {
+        width: 32%;
+        padding-top: 17px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 57px;
+
+        .form__title {
+            @include fontStyle(16px, 300);
+            margin-bottom: 20px;
+            color: $bgColorDark;
+        }
+
+        .form__input {
+            margin-bottom: 20px;
+            padding: 13px 17px 16px;
+            border: 1px solid $colorNeutralText;
+            color: #B1B1B1;
+
+            &:last-child {
+                margin-bottom: 23px;
+            }
+
+            &::placeholder {
+                color: $colorNeutralText;
+            }
+
+            &:focus-visible {
+                outline-color: $colorContrast;
+            }
+        }
+
+        .cart__btn {
+            @include fontStyle(11px, 300);
+            align-self: flex-start;
+            color: $colorNeutralText;
 
             &:hover {
-               @extend %btn_hover;
-               cursor: pointer;
-               border-color: $colorSuperLight;
+                @extend %btn_hover;
+                cursor: pointer;
+                border-color: $colorSuperLight;
             }
 
             &:active {
                 @extend %btn_active;
             }
+        }
+    }
+
+    &__sum {
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        background-color: #F5F3F3;
+        text-align: right;
+
+        .sum__btn {
+            @include fontStyle(16px, 300);
+            background-color: $colorContrast;
+            color: $colorSuperLight;
+            border-color: $colorContrast;
+
+            &:hover {
+                @extend %btn_active;
+                cursor: pointer;
+            }
+
+            &:active {
+                background-color: $bgColorDark;
+            }
+        }
+    }
+
+    &__total {
+        margin-bottom: 17px;
+        border-bottom: 1pz solid #E2E2E2;
+
+        &-sub {
+            @include fontStyle(11px, 400);
+            margin-bottom: 12px;
+            color: $colorNeutralText;
+        }
+
+        &-main {
+            @include fontStyle(16px, 300);
+            color: $bgColorDark;
+
+            .price {
+                margin-left: 15px;
+                font-weight: 700;
+                color: $colorContrast;
+            }
+        }
+
+        .price {
+            margin-left: 18px;
         }
 
     }

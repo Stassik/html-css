@@ -12,7 +12,7 @@
   align-items: center;
 }
 
-.cart__info-btn, .arrivals__text, .arrivals__category, .arrivals__breadcrumb, .advantages__text, .acquisitions .item__text {
+.cart__btn, .arrivals__text, .arrivals__category, .arrivals__breadcrumb, .advantages__text, .acquisitions .item__text {
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -33,12 +33,12 @@
   line-height: normal;
 }
 
-.cart__info-btn:hover, .acquisitions .block__btn:hover, .arrivals__btn:hover, .acquisitions__btn:hover {
+.cart__form .cart__btn:hover, .cart__btn:hover, .acquisitions .block__btn:hover, .arrivals__btn:hover, .acquisitions__btn:hover {
   background-color: #FF6A6A;
   color: #fff;
 }
 
-.subscribe__btn:hover, .cart__info-btn:active, .acquisitions .block__btn:active, .arrivals__btn:active, .acquisitions__btn:active {
+.subscribe__btn:hover, .cart__sum .sum__btn:hover, .cart__form .cart__btn:active, .cart__btn:active, .acquisitions .block__btn:active, .arrivals__btn:active, .acquisitions__btn:active {
   background-color: #6F6E6E;
   border-color: #6F6E6E;
 }
@@ -733,6 +733,8 @@ summary::-webkit-details-marker {
 
 .cart {
   padding: 96px 0 128px;
+  display: flex;
+  justify-content: space-between;
 }
 .cart__info {
   width: 57%;
@@ -820,17 +822,114 @@ summary::-webkit-details-marker {
 .cart__info-box {
   margin-top: 72px;
 }
-.cart__info-btn {
+.cart__btn {
   padding: 17px 40px;
   background-color: #fff;
   border: 1px solid #A4A4A4;
   color: #000;
   transition: all 0.3s ease-in-out;
 }
-.cart__info-btn:hover {
+.cart__btn:hover {
   cursor: pointer;
   border-color: #fff;
 }
+.cart__order {
+  width: 32%;
+  padding-top: 17px;
+}
+.cart__form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 57px;
+}
+.cart__form .form__title {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  margin-bottom: 20px;
+  color: #222;
+}
+.cart__form .form__input {
+  margin-bottom: 20px;
+  padding: 13px 17px 16px;
+  border: 1px solid #A4A4A4;
+  color: #B1B1B1;
+}
+.cart__form .form__input:last-child {
+  margin-bottom: 23px;
+}
+.cart__form .form__input::-moz-placeholder {
+  color: #A4A4A4;
+}
+.cart__form .form__input::placeholder {
+  color: #A4A4A4;
+}
+.cart__form .form__input:focus-visible {
+  outline-color: #F16D7F;
+}
+.cart__form .cart__btn {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  align-self: flex-start;
+  color: #A4A4A4;
+}
+.cart__form .cart__btn:hover {
+  cursor: pointer;
+  border-color: #fff;
+}
+.cart__sum {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  background-color: #F5F3F3;
+  text-align: right;
+}
+.cart__sum .sum__btn {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-color: #F16D7F;
+  color: #fff;
+  border-color: #F16D7F;
+}
+.cart__sum .sum__btn:hover {
+  cursor: pointer;
+}
+.cart__sum .sum__btn:active {
+  background-color: #222;
+}
+.cart__total {
+  margin-bottom: 17px;
+  border-bottom: 1pz solid #E2E2E2;
+}
+.cart__total-sub {
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 12px;
+  color: #A4A4A4;
+}
+.cart__total-main {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: #222;
+}
+.cart__total-main .price {
+  margin-left: 15px;
+  font-weight: 700;
+  color: #F16D7F;
+}
+.cart__total .price {
+  margin-left: 18px;
+}
+
 .subscribe {
   padding: 97px 0 126px;
   background-image: url(../img/subscribe.jpg);
