@@ -897,6 +897,7 @@ summary::-webkit-details-marker {
   border-color: #F16D7F;
 }
 .cart__sum .sum__btn:hover {
+  border-color: #fff;
   cursor: pointer;
 }
 .cart__sum .sum__btn:active {
