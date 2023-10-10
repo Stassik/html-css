@@ -25,7 +25,7 @@
 
 
 %btn_hover {
-    background-color: #FF6A6A;
+    background-color: $colorContrast;
     color: $colorSuperLight;
 }
 
@@ -45,6 +45,7 @@
 
     &:hover {
         @extend %btn_hover;
+        transform: scale(1.03);
         cursor: pointer;
     }
 
