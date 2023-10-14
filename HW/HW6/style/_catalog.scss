@@ -209,7 +209,6 @@
 
     &__pagination {
         @extend %flexCenterBetween;
-        margin-top: calc(48px - 1%);
         display: flex;
         justify-content: center;
 

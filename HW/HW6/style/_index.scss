@@ -4,27 +4,27 @@
 
     &__content {
         @extend %flexCenter;
+
+    }
+
+    &__info {
+        padding: 8px 0 8px 16px;
+        width: 405px;
+        border-left: 12px solid $colorContrast;
     }
 
     &__img {
         margin-left: -230px;
-        margin-right: 91px;
+        margin-right: 4vw;
     }
 
     &__title {
         @include fontStyle(48px, 900, normal, 37px);
+
         position: relative;
+
         color: $bgColorDark;
 
-        &::before {
-            position: absolute;
-            top: -17.5%;
-            left: -28px;
-            content: "";
-            height: 135%;
-            width: 12px;
-            background-color: $colorContrast;
-        }
 
         &_mini {
             @include fontStyle(32px, 700, normal, normal);
@@ -111,6 +111,7 @@
     &__list {
         @extend %flexCenterBetween;
         flex-wrap: wrap;
+        margin-bottom: 25px;
     }
 
     &__item {
@@ -120,6 +121,8 @@
         width: 32%;
         margin-bottom: 2%;
         overflow: hidden;
+
+        
     }
 
     .img__block {
@@ -199,7 +202,6 @@
 
     &__btn {
         @extend %submitBtn;
-        margin-top: calc(48px - 2%);
         margin-bottom: 95px;
         padding: 15px 39px;
     }

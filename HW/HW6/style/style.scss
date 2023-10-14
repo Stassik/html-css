@@ -41,27 +41,29 @@
         padding-left: 2%;
         padding-right: 2%;
     }
+
 }
 
 /*           Tablet             */
 
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
     .center {
         min-width: $centerTabletWidth;
     }
 
     .main__img {
-        margin-left: 0;
-        margin-right: 67px;
+        margin-left: -2%;
+        margin-right: 5vw;
         height: 368px;
     }
 
     .main__title {
+        width: 311px;
         font-size: 44px;
         line-height: 30px;
     }
 
-    .title__mini {
+    .main__title_mini {
         font-size: 24px;
     }
 
@@ -82,11 +84,15 @@
     }
 
     .acquisitions__list {
-        margin-bottom: 32px;
+        margin-bottom: 17px;
     }
 
     .acquisitions__item {
         width: 49%;
+
+        &:nth-child(3) {
+            display: none;
+        }
     }
 
     .acquisitions__title {
@@ -98,7 +104,8 @@
     }
 
     .acquisitions__btn {
-        margin-bottom: 70px;
+        margin-top: 0px;
+        margin-bottom: 64px;
     }
 
 
@@ -143,6 +150,74 @@
     .subscribe__form {
         justify-content: center;
     }
+
+
+    .sample__content {
+        justify-content: space-between;
+        padding-top: 24px;
+        padding-bottom: 40px;
+    }
+
+    .sample__sort {
+        margin-right: 0;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
+    .sample__pagination {
+        margin-top: 8px;
+    }
+
+    .sample__pagination-list {
+        width: 38%;
+        max-width: 283px;
+        margin-bottom: 63.5px;
+    }
+
+    .arrivals__content {
+        top: 0;
+        left: -2%;
+        width: 100vw;
+    }
+
+    .arrivals .acquisitions {
+        margin-bottom: 96px;
+    }
+
+    .cart {
+        padding-top: 59px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__info {
+            width: 100%;
+            max-width: $centerTabletWidth;
+
+            &-box {
+                margin: 62px 0 64px;
+
+            }
+        }
+
+        &__order {
+            width: 100%;
+            max-width: $centerTabletWidth;
+            align-items: flex-start;
+            display: flex;
+            justify-content: center;
+            gap: 16px;
+            
+        }
+
+        &__form {
+            flex-grow: 1;
+           
+        }
+
+        &__sum {
+            margin-top: 39px;
+        }
+    }
 }
 
 /*           Mobile             */
@@ -186,11 +261,12 @@
 
     .main__content {
         min-height: 363px;
+
         justify-content: center;
     }
 
     .main__info {
-        margin-left: 28px;
+        width: 263px;
     }
 
     .main__img {
@@ -202,7 +278,7 @@
         line-height: 24px;
     }
 
-    .title__mini {
+    .main__title_mini {
         font-size: 20px;
     }
 
