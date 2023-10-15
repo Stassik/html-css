@@ -372,7 +372,11 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 0;
   color: #F16D7F;
+}
+.arrivals__breadcrumb {
+  margin-bottom: 0;
 }
 .arrivals__breadcrumb a {
   color: #636363;
@@ -1258,6 +1262,17 @@ summary::-webkit-details-marker {
     left: -2%;
     width: 100vw;
   }
+  .arrivals__carousel-item.active {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .arrivals__carousel-item img {
+    height: 565px;
+  }
+  .arrivals__carousel-inner {
+    height: 624px;
+  }
   .arrivals .acquisitions {
     margin-bottom: 96px;
   }
@@ -1286,6 +1301,19 @@ summary::-webkit-details-marker {
   }
   .cart__sum {
     margin-top: 39px;
+  }
+  .log {
+    padding-top: 40px;
+  }
+  .log-left {
+    width: 49%;
+    max-width: 360px;
+  }
+  .log-right {
+    width: 49%;
+  }
+  .log-right, .log__title {
+    font-size: 16px;
   }
 }
 /*           Mobile             */

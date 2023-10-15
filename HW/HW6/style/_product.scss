@@ -12,11 +12,13 @@
 
     &__title {
         @include fontStyle(24px, 400, normal, normal);
+        margin-bottom: 0;
         color: $colorContrast;
     }
 
     &__breadcrumb {
         @extend %fontStyle__300_14;
+        margin-bottom: 0;
 
         a {
             color: #636363;
