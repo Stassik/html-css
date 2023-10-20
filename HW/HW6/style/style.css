@@ -361,6 +361,10 @@ summary::-webkit-details-marker {
   line-height: normal;
   margin-bottom: 16px;
 }
+.advantages__text {
+  color: #FBFBFB;
+}
+
 .arrivals__head {
   background-color: #F8F3F4;
 }
@@ -828,6 +832,7 @@ summary::-webkit-details-marker {
   border: 1px solid #A4A4A4;
   color: #000;
   transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
 }
 .cart__btn:hover {
   cursor: pointer;
@@ -902,8 +907,9 @@ summary::-webkit-details-marker {
   cursor: pointer;
 }
 .cart__total {
+  padding-bottom: 21px;
   margin-bottom: 17px;
-  border-bottom: 1pz solid #E2E2E2;
+  border-bottom: 1px solid #E2E2E2;
 }
 .cart__total-sub {
   font-size: 11px;
@@ -1386,7 +1392,7 @@ summary::-webkit-details-marker {
     margin-bottom: 64px;
   }
   .acquisitions__list {
-    margin-bottom: 41px;
+    margin-bottom: calc(41px - 4%);
     justify-content: center;
   }
   .acquisitions__item {
@@ -1407,9 +1413,18 @@ summary::-webkit-details-marker {
   .subscribe {
     padding-bottom: 110px;
   }
+  .subscribe__form {
+    width: 91%;
+    max-width: 341px;
+  }
   .subscribe__left,
   .subscribe__right {
     width: 100%;
+  }
+  .subscribe__right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .subscribe__input {
     width: 85%;
@@ -1433,5 +1448,160 @@ summary::-webkit-details-marker {
   }
   .social__list {
     justify-content: center;
+  }
+  .arrivals__head-content {
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 46px;
+  }
+  .arrivals__title {
+    margin-bottom: 32px;
+  }
+  .arrivals__carousel-item img {
+    height: 454px;
+  }
+  .arrivals__about {
+    margin-bottom: 64px;
+  }
+  .arrivals__info {
+    width: 96%;
+    margin-bottom: 49px;
+  }
+  .arrivals__subtitle {
+    margin-bottom: 32px;
+  }
+  .arrivals__text {
+    line-height: 143.1%;
+  }
+  .arrivals__price {
+    margin-bottom: 32px;
+  }
+  .arrivals__selection-block {
+    margin-bottom: 64px;
+  }
+  .arrivals__select {
+    font-size: 10px;
+  }
+  .arrivals__select-icon {
+    margin-left: 10px;
+  }
+  .arrivals .acquisitions {
+    margin-bottom: calc(38px - 4%);
+  }
+  .sample__content {
+    align-items: center;
+  }
+  .sample__filter {
+    width: 20%;
+  }
+  .sample__filter-title {
+    margin-left: 16px;
+  }
+  .sample__filter-title span {
+    display: none;
+  }
+  .sample__filter-icon {
+    width: 37px;
+    height: 25px;
+    margin-left: 5px;
+  }
+  .sample__filter-box[open] .sample__filter-icon {
+    margin-left: 0px;
+  }
+  .sample__filter-content {
+    width: 230px;
+    padding-top: 66px;
+  }
+  .sample__sort {
+    width: 80%;
+    font-size: 12px;
+  }
+  .sample__pagination-list {
+    width: 70%;
+  }
+  .arrivals__head-content_cart {
+    padding: 50px 0 69px;
+  }
+  .arrivals__title_cart {
+    margin-bottom: 0;
+  }
+  .cart {
+    padding-top: 39px;
+    padding-bottom: 96px;
+    max-width: 600px;
+  }
+  .cart__info-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+  .cart__info .item__info {
+    padding: 13px 17px;
+  }
+  .cart__info .item__info-heading {
+    margin-bottom: 25px;
+  }
+  .cart__info .item__info-title {
+    font-size: 16px;
+  }
+  .cart__info .item__info-list {
+    font-size: 14px;
+  }
+  .cart__info .item__icon_close {
+    width: 10px;
+    height: 12px;
+  }
+  .cart__info .item__img {
+    height: 188px;
+  }
+  .cart__info .item__list-item input {
+    width: 24px;
+    font-size: 10px;
+  }
+  .cart__info-box {
+    margin: 30px 0 48px;
+  }
+  .cart__btn {
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 18px;
+    width: 49%;
+    max-width: 180px;
+    color: #575757;
+    text-transform: none;
+  }
+  .cart__order {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .cart__form {
+    margin-bottom: 48px;
+  }
+  .cart__form .cart__btn {
+    font-weight: 400;
+    color: #575757;
+    width: auto;
+  }
+  .cart__sum {
+    margin-top: 0;
+  }
+  .cart__sum .sum__btn {
+    width: 100%;
+    max-width: 280px;
+    padding: 15px 42px;
+    align-self: center;
+    letter-spacing: -0.5px;
+  }
+  .log {
+    flex-direction: column;
+    align-items: center;
+  }
+  .log-left, .log-right {
+    width: 100%;
+    max-width: 360px;
+  }
+  .log-right {
+    margin-top: 40px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -122,7 +122,7 @@
         margin-bottom: 2%;
         overflow: hidden;
 
-        
+
     }
 
     .img__block {
@@ -235,5 +235,6 @@
 
     &__text {
         @extend %fontStyle__300_14;
+        color: #FBFBFB;
     }
 }

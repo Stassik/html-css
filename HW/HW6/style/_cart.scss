@@ -126,6 +126,7 @@
         border: 1px solid $colorNeutralText;
         color: #000;
         transition: all .3s ease-in-out;
+        text-transform: uppercase;
 
         &:hover {
             @extend %btn_hover;
@@ -216,8 +217,9 @@
     }
 
     &__total {
+        padding-bottom: 21px;
         margin-bottom: 17px;
-        border-bottom: 1pz solid #E2E2E2;
+        border-bottom: 1px solid #E2E2E2;
 
         &-sub {
             @include fontStyle(11px, 400);
